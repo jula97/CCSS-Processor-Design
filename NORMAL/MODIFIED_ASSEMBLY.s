@@ -15,11 +15,11 @@
 ;     00000010-COL
 ;     00000100-CURR
 
-LOADAC 0x00   //no.of rows in A = no.of rows in C
+LDAC 0x00   //no.of rows in A = no.of rows in C
 MOVEAC N
-LOADAC 0x01   //no.of columns in A = no.of rows in B
+LDAC 0x01   //no.of columns in A = no.of rows in B
 MOVEAC M
-LOADAC 0x02   //no.of columns in B = no.of columns in C
+LDAC 0x02   //no.of columns in B = no.of columns in C
 MOVEAC P
 
 RESET ROW        //ROW <-- 0x00
@@ -47,7 +47,7 @@ mloop:
             MOVEAC R
 
             MOVETOAC SUM
-            STOREAC R
+            STAC R
 
             INC COL
             RESET CURR
@@ -63,7 +63,7 @@ mloop:
             ADD CURR
             ADDV STA
             MOVEAC R
-            LOADAC R
+            LDAC R
             MOVEAC AVAL
 
             MOVETOAC CURR
@@ -71,7 +71,7 @@ mloop:
             ADD COL
             ADDV STB
             MOVEAC R
-            loadac R    
+            LDAC R    
         
             MUL AVAL
             ADD SUM

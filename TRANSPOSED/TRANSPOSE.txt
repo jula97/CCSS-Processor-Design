@@ -17,19 +17,19 @@
 ;     00000010-COL
 ;     00000100-CURR
 
-LDAC 0x00       //#rows A = #rows C
+LOADAC 0x00       //#rows A = #rows C
 MOVEAC N          // N <-- AC 
-LDAC 0x01       //#columns A = #rows B
+LOADAC 0x01       //#columns A = #rows B
 MOVEAC M          // M <-- AC
-LDAC 0x02       //#columns B = #columns C
+LOADAC 0x02       //#columns B = #columns C
 MOVEAC P
-LDAC 0x03       //Starting address of Mat A in memory
+LOADAC 0x03       //Starting address of Mat A in memory
 MOVEAC STA
 MOVEAC A           
-LDAC 0x04       //Starting address of Mat B in memory
+LOADAC 0x04       //Starting address of Mat B in memory
 MOVEAC STB
 MOVEAC B          
-LDAC 0x05       //Starting address of Mat C in memory
+LOADAC 0x05       //Starting address of Mat C in memory
 MOVEAC STC
 
 RESET ROW         // ROW <-- 0
@@ -48,15 +48,31 @@ mloop:
         RESET SUM       //SUM <-- 0
         JUMP mloop2     
 
+        mstore:
+            MOVETOAC SUM    //AC <-- SUM
+            STOREAC STC     //M[STC] <--- AC      (STC is the current cell in C)
+
+            INC STC         // increment STC twice (one element in C should have 2 bytes)
+            INC STC
+            
+            INC COL        // increment coloumn no.
+            RESET CURR     //reset the current cell 
+
+            MOVETOAC ROW   //AC <-- ROW
+            MUL M          
+            ADD A          //AC <--- (ROW * M ) + A
+            MOVEAC STA     //STA <-- AC  
+            JUMP mloop1
+            
         mloop2:
             MOVETOAC CURR   //AC <-- CURR
             XOR M           //AC <-- AC ^ M
             JUMPZ mstore    //if Z==1, jump to mstore  ..... compares CURR and M
 
-            LDAC STA      //AC <-- value at STA (address of current cell in A)
+            LOADAC STA      //AC <-- value at STA (address of current cell in A)
             MOVEAC AVAL     //AVAL <-- AC 
 
-            LDAC STB      //AC <-- value at STB (address of current cell in B)
+            LOADAC STB      //AC <-- value at STB (address of current cell in B)
             
             MUL AVAL        //AC <-- AC * AVAL     (result is BVAL *AVAl)
             ADD SUM         //AC <-- AC + SUM 
@@ -67,22 +83,6 @@ mloop:
             INC STB         // increment STB (address pointer of B)
 
             JUMP mloop2
-
-        mstore:
-            MOVETOAC SUM    //AC <-- SUM
-            STAC STC     //M[STC] <--- AC      (STC is the current cell in C)
-
-            INC STC         // increment STC twice (one element in C should have 2 bytes)
-            INC STC
-            
-            INC COL        // increment coloumn no.
-            RESET CURR     //reset the current cell 
-
-            MOVETOAC ROW   //AC <-- ROW
-            MUL M          
-            ADD A          //AC <-- (ROW*M) + A
-            MOVEAC STA     //STA <-- AC  
-            JUMP mloop1
     
     mend1:
         INC ROW          //increment the ROW value

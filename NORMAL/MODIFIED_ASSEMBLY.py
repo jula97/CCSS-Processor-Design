@@ -1,20 +1,19 @@
-# consider a Matrix A = 3x2 and Matrix B = 2x4
-# no.of elements in A = 6
-# no.of elements in B = 8
-# N=3 ; M=2; P=4
+# consider a Matrix A = 2x2 and Matrix B = 2x2
+# no.of elements in A = 4
+# no.of elements in B = 4
+# N=2 ; M=2; P=2
 # STA = 3 (4th element)
-# STB = 9 (10th element)
-# STC = 17 (18th element)
+# STB = 7 (10th element)
+# STC = 11 (18th element)
 
-Memory = [3,
+Memory = [2,
           2,
-          4,
-          0,0,
-          0,0,
-          0,0,
+          2,
+          1,2,
+          3,4,
           
-          0,0,0,0,
-          0,0,0,0,
+          5,6,
+          7,8,
           
           0,0,0,0,
           0,0,0,0,
@@ -35,155 +34,68 @@ Z = 0
 
 A = 0 #Constant value
 S = 2 #Constant value
-STC = 17 #Constant value
+STC = 11 #Constant value
 STA = 3 #Constant value
-STB = 9 #Constant value
+STB = 7 #Constant value
 AVAL = 0 #Constant value
 SUM = 0 #Constant value
 
-
-def mloop():
+while(True): #mloop
     AC = ROW
     Z = 0
     if(N==ROW):
         Z = 1
-    if(Z==1):
-        mend()
-    COL = 0
+    if(Z==0):
+        COL = 0
+        while(True): #mloop1
+            AC = COL
+            Z = 0
+            if(P==AC):
+                Z = 1
+            if(Z==0):
+                SUM = 0
+                while(True):
+                    AC = CURR
+                    Z = 0
+                    if(AC==M):
+                        AC = ROW
+                        AC = AC * P
+                        AC = AC + COL
+                        AC = AC * S
+                        AC = AC + STC
+                        R = AC
 
-def mloop1():
-    AC = COL
-    Z = 0
-    if(P==AC):
-        Z = 1
-    if(Z==1):
-        mend1()
-    SUM = 0
-    mloop2()
+                        AC = SUM
+                        Memory[R] = AC
 
-def mstore():
-    AC = ROW
-    AC = AC * P
-    AC = AC + COL
-    AC = AC * S
-    AC = AC + STC
-    R = AC
+                        COL = COL + 1
+                        CURR = 0
+                        break
+                    AC = ROW
+                    AC = AC * M
+                    AC = AC + CURR
+                    AC = AC + STA
+                    R = AC
+                    AC = Memory[R]
+                    AVAL = AC
 
-    AC = SUM
-    Memory[R] = AC
+                    AC = CURR
+                    AC = AC * P
+                    AC = AC + COL
+                    AC = AC + STB
+                    R = AC
+                    AC = Memory[R]
 
-    COL = COL + 1
-    CURR = 0
-    mloop1()
+                    AC = AC * AVAL
+                    AC = SUM + AC
+                    SUM = AC
 
-def mloop2():
-    AC = CURR
-    Z = 0
-    if(AC==M):
-        mstore()
-    
-    AC = ROW
-    AC = AC * M
-    AC = AC + CURR
-    AC = AC + STA
-    R = AC
-    AC = Memory[R]
-    AVAL = AC
+                    CURR = CURR + 1
 
-    AC = CURR
-    AC = AC * P
-    AC = AC + COL
-    AC = AC + STB
-    R = AC
-    AC = Memory[R]
+            elif(Z==1):
+                ROW = ROW + 1
+                break
+    elif(Z==1):
+        break
 
-    AC = AC * AVAL
-    AC = SUM + AC
-    SUM = AC
-
-    CURR = CURR + 1
-    mloop2()
-
-def mend1():
-    ROW = ROW + 1
-    mloop()
-
-def mend():
-    break
-
-while(True):
-    mloop()
-    mloop1()
-    mstore()
-    mloop2()
-    mend1()
-    mend()
-
-# while(True):
-#     AC = ROW
-#     Z = 0
-#     if(N==ROW):
-#         Z = 1
-#     if(Z==1):
-#         mend()
-#     else:
-#         COL = 0
-
-#     while(True): #mloop1
-#         AC = COL
-#         Z = 0
-#         if(P==AC):
-#             Z = 1
-#         if(Z==1):
-#             mend1()
-#         SUM = 0
-#         mloop2()
-
-#         while(True): #mstore
-#             AC = ROW
-#             AC = AC * P
-#             AC = AC + COL
-#             AC = AC * S
-#             AC = AC + STC
-#             R = AC
-
-#             AC = SUM
-#             Memory[R] = AC
-
-#             COL = COL + 1
-#             CURR = 0
-#             #goto mploop1
-
-#         while(True): #mloop2
-#             AC = CURR
-#             Z = 0
-#             if(AC==M):
-#                 #goto mstore
-#                 True
-            
-#             AC = ROW
-#             AC = AC * M
-#             AC = AC + CURR
-#             AC = AC + STA
-#             R = AC
-#             AC = Memory[R]
-#             AVAL = AC
-
-#             AC = CURR
-#             AC = AC * P
-#             AC = AC + COL
-#             AC = AC + STB
-#             R = AC
-#             AC = Memory[R]
-
-#             AC = AC * AVAL
-#             AC = SUM + AC
-#             SUM = AC
-
-#             CURR = CURR + 1
-#             #goto mloop2
-        
-#     while(True): #mend1
-
-#         ROW = ROW + 1
-#         #goto mloop
+print(Memory)

@@ -42,26 +42,26 @@ AVAL = 0 #Constant value
 SUM = 0 #Constant value
 
 
-def mloop():
+def mloop(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM):
     AC = ROW
     Z = 0
     if(N==ROW):
         Z = 1
     if(Z==1):
-        mend()
+        mend(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
     COL = 0
 
-def mloop1():
+def mloop1(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM):
     AC = COL
     Z = 0
     if(P==AC):
         Z = 1
     if(Z==1):
-        mend1()
+        mend1(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
     SUM = 0
-    mloop2()
+    mloop2(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
 
-def mstore():
+def mstore(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM):
     AC = ROW
     AC = AC * P
     AC = AC + COL
@@ -74,13 +74,13 @@ def mstore():
 
     COL = COL + 1
     CURR = 0
-    mloop1()
+    mloop1(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
 
-def mloop2():
+def mloop2(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM):
     AC = CURR
     Z = 0
     if(AC==M):
-        mstore()
+        mstore(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
     
     AC = ROW
     AC = AC * M
@@ -102,22 +102,22 @@ def mloop2():
     SUM = AC
 
     CURR = CURR + 1
-    mloop2()
+    mloop2(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
 
-def mend1():
+def mend1(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM):
     ROW = ROW + 1
-    mloop()
+    mloop(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
 
-def mend():
-    break
+def mend(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM):
+    False
 
 while(True):
-    mloop()
-    mloop1()
-    mstore()
-    mloop2()
-    mend1()
-    mend()
+    mloop(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
+    mloop1(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
+    mstore(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
+    mloop2(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
+    mend1(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
+    mend(N, M, P, ROW, COL, CURR, Z, A, S, STC, STA, STB, AVAL, SUM)
 
 # while(True):
 #     AC = ROW

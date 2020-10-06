@@ -86,9 +86,15 @@ mloop:
     
     mend1:
         INC ROW          //increment the ROW value
+
+        MOVETOAC ROW   //AC <-- ROW
+        MUL M          
+        ADD A          //AC <-- (ROW*M) + A
+        MOVEAC STA     //STA <-- AC
         MOVETOAC B       //AC <-- B
         MOVEAC STB       //STB <-- AC  (net effect STB <-- B)
-        JUMPZ mloop1
+
+        JUMP mloop
 
 mend:
     NOP

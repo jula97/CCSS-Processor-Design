@@ -11,9 +11,9 @@ Memory = [2,
           4,
           4,
           2,
-          7,
-          23,
-          39,
+          8,
+          24,
+          40,
 
           1,2,3,4,
           5,6,7,8,
@@ -43,6 +43,8 @@ S = 2 #Constant value
 
 def MultiCore(Memory, CoreID):
     global S
+    State = 1
+    N, M, P, STA, STB, STC, A, B=0,0,0,0,0,0,0,0
 
     AC = CoreID
     N = AC
@@ -50,7 +52,7 @@ def MultiCore(Memory, CoreID):
     AC = Memory[0] #NoC
     R = AC
     Z = 0
-    AC = AC / (N)
+    AC = int(AC / (N))
     if(AC == 0):
         Z = 1
 
@@ -89,8 +91,8 @@ def MultiCore(Memory, CoreID):
         STC = AC
 
     elif(Z==1):
-        True #mend
-    return N, M, P, STA, STB, STC, A, B, S
+        State = 0 #mend
+    return N, M, P, STA, STB, STC, A, B, S, State
 
 def singlecore(ID):     
     N=0
@@ -104,9 +106,11 @@ def singlecore(ID):
     AVAL = 0 #Constant value
     SUM = 0 #Constant value
 
-    N, M, P, STA, STB, STC, A, B, S = map(int,MultiCore(Memory, CoreID=ID))
+    N, M, P, STA, STB, STC, A, B, S, State = map(int,MultiCore(Memory, CoreID=ID))
 
     while(True): #mloop
+        if State == 0:
+            break
         AC = ROW
         Z = 0
         if(N==AC):
@@ -166,8 +170,8 @@ def singlecore(ID):
 
 singlecore(0)
 singlecore(1)
-# singlecore(2)
-# singlecore(3)
+singlecore(2)
+singlecore(3)
 
 print(Memory)
 

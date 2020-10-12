@@ -1,6 +1,6 @@
 # First element in the memory = No.of Cores employed
 
-NoC=2
+NoC=4
 
 Memory = [NoC, 
           4,
@@ -159,8 +159,8 @@ singlecore(1)
 singlecore(2)
 singlecore(3)
 
-print(Memory[40:48])
-print(Memory[48:56])
-print(Memory[56:64])
-print(Memory[64:72])
+print(Memory[39:47])
+print(Memory[47:55])
+print(Memory[55:63])
+print(Memory[63:71])
 

@@ -1,12 +1,8 @@
-# consider a Matrix A = 2x2 and Matrix B = 2x2
-# no.of elements in A = 4
-# no.of elements in B = 4
-# N=2 ; M=2; P=2
-# STA = 6 (4th element)
-# STB = 10 (10th element)
-# STC = 14 (18th element)
+# First element in the memory = No.of Cores employed
 
-Memory = [2, 
+NoC=2
+
+Memory = [NoC, 
           4,
           4,
           4,
@@ -35,11 +31,8 @@ Memory = [2,
           0,0,0,0
         ] 
 
-
-
 Z = 0
 S = 2 #Constant value
-
 
 def MultiCore(Memory, CoreID):
     global S
@@ -173,6 +166,8 @@ singlecore(1)
 singlecore(2)
 singlecore(3)
 
-print(Memory)
-
+print(Memory[40:48])
+print(Memory[48:56])
+print(Memory[56:64])
+print(Memory[64:72])
 

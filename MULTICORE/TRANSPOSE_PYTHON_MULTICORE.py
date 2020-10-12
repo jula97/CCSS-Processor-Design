@@ -6,10 +6,9 @@ Memory = [NoC,
           4,
           4,
           4,
-          2,
-          8,
-          24,
-          40,
+          7,
+          23,
+          39,
 
           1,2,3,4,
           5,6,7,8,
@@ -32,10 +31,8 @@ Memory = [NoC,
         ] 
 
 Z = 0
-S = 2 #Constant value
 
 def MultiCore(Memory, CoreID):
-    global S
     State = 1
     N, M, P, STA, STB, STC, A, B=0,0,0,0,0,0,0,0
 
@@ -58,10 +55,7 @@ def MultiCore(Memory, CoreID):
         AC = Memory[3]
         P = AC
 
-        AC = Memory[4]     ##add to assembly code
-        S =AC
-
-        AC = Memory[5]
+        AC = Memory[4]
         STA = AC
         AC = CoreID
         AC = AC * N
@@ -70,22 +64,22 @@ def MultiCore(Memory, CoreID):
         STA = AC
         A = AC
 
-        AC = Memory[6]
+        AC = Memory[5]
         STB = AC
         B = AC
 
-        AC = Memory[7]
+        AC = Memory[6]
         STC = AC
         AC = CoreID
         AC = AC * N
         AC = AC * P
-        AC = AC * S
+        AC = AC * 2
         AC = AC + STC
         STC = AC
 
     elif(Z==1):
         State = 0 #mend
-    return N, M, P, STA, STB, STC, A, B, S, State
+    return N, M, P, STA, STB, STC, A, B, State
 
 def singlecore(ID):     
     N=0
@@ -95,11 +89,10 @@ def singlecore(ID):
     COL = 0
     CURR = 0
     Z = 0
-    S = 2 #Constant value
     AVAL = 0 #Constant value
     SUM = 0 #Constant value
 
-    N, M, P, STA, STB, STC, A, B, S, State = map(int,MultiCore(Memory, CoreID=ID))
+    N, M, P, STA, STB, STC, A, B, State = map(int,MultiCore(Memory, CoreID=ID))
 
     while(True): #mloop
         if State == 0:

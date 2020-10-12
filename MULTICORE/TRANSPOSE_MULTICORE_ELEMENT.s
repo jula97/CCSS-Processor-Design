@@ -31,19 +31,29 @@ MOVEAC M
 LDAC 0x03
 MOVEAC P 
 
+MOVETOAC CoreID
+MOVEAC R1
+INC R1
+MOVETOAC R  
+DIV R1     #(NoC)/(CoreID+1)  if (NoC)<(CoreID+1) ==> AC=0   if AC==0 Z==1
+JUMPZ end   
+
 loop1:
+    MOVETOAC CoreID
+    MOVEAC R1
+    INC R1
     MOVETOAC N 
     MUL P 
-    DIV CoreID   #(N*P)/CoreID  if (N*P)<CoreID ==> AC=0   if AC==0 Z==1
+    DIV R1   #(N*P)/(CoreID+1)  if (N*P)<(CoreID+1) ==> AC=0   if AC==0 Z==1
     JUMPZ end
 
     MOVETOAC CoreID 
     DIV P 
-    MOVEAC ROW  #ROW <-- CoreID/P
+    MOVEAC ROW   #ROW <-- CoreID/P
 
     MOVETOAC CoreID
     MOD P 
-    MOVEAC COL  #COL <-- CoreID%P
+    MOVEAC COL   #COL <-- CoreID%P
 
     LDAC 0x04       //Starting address of Mat A in memory
     MOVEAC STA
@@ -67,6 +77,7 @@ loop1:
     MOVEAC STC    #STC<--STC+(CoreID*2)
 
     RESET CURR       // CURR <-- 0
+    RESET SUM
 
     loop2:
           MOVETOAC CURR   //AC <-- CURR
@@ -78,7 +89,7 @@ loop1:
 
           LDAC STB        //AC <-- value at STB (address of current cell in B)
             
-          MUL AVAL        //AC <-- AC * AVAL     (result is BVAL *AVAl)
+          MUL R1        //AC <-- AC * AVAL(R1)     (result is BVAL *AVAl)
           ADD SUM         //AC <-- AC + SUM 
           MOVEAC SUM      //SUM <-- AC 
 
@@ -86,13 +97,13 @@ loop1:
           INC STA         // increment STA (address pointer of A)
           INC STB         // increment STB (address pointer of B)
 
-          JUMP mloop2
-
+          JUMP loop2
 
     mstore:
           MOVETOAC SUM    //AC <-- SUM
           STAC STC     //M[STC] <--- AC      (STC is the current cell in C)
 
+    
     MOVETOAC CoreID
     ADD R 
     MOVEAC CoreID  #CoreID = CoreID + NoC

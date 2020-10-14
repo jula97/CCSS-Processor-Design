@@ -72,7 +72,7 @@ loop1:
     LDAC 0x06       //Starting address of Mat C in memory
     MOVEAC STC
     MOVETOAC CoreID
-    MULV 2
+    MULTWO
     ADD STC
     MOVEAC STC    #STC<--STC+(CoreID*2)
 
@@ -85,7 +85,7 @@ loop1:
           JUMPZ mstore    //if Z==1, jump to mstore  ..... compares CURR and M
 
           LDAC STA        //AC <-- value at STA (address of current cell in A)
-          MOVEAC AVAL     //AVAL <-- AC 
+          MOVEAC R1     //AVAL <-- AC 
 
           LDAC STB        //AC <-- value at STB (address of current cell in B)
             

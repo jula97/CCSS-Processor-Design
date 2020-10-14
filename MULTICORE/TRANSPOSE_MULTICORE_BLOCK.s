@@ -55,7 +55,7 @@ MOVEAC STC
 MOVETOAC CoreID //AC<- CoreID
 MUL N          // AC <- CoreID * N
 MUL P          // AC <- CoreID * N * P
-MULV 2          // AC <- CoreID * N * P *2  
+MULTWO         // AC <- CoreID * N * P *2  
 ADD STC        // AC <- ( CoreID * N * P )+ STC
 MOVEAC STC
 

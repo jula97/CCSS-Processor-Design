@@ -106,6 +106,7 @@ def singlecore(ID):
             
             while(True): #mloop1
                 AC = COL
+
                 Z = 0
                 if(P==AC):
                     Z = 1
@@ -131,6 +132,7 @@ def singlecore(ID):
                             break
                         
                         AC = Memory [STA]
+
                         R = AC
                         AC = Memory [STB]
                         

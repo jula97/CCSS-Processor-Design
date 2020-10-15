@@ -106,6 +106,8 @@ def singlecore(ID):
             
             while(True): #mloop1
                 AC = COL
+
+                Z = 0
                 if(P==AC):
                     Z = 1
                 if(Z==0):
@@ -130,10 +132,11 @@ def singlecore(ID):
                             break
                         
                         AC = Memory [STA]
-                        R1 = AC
+
+                        R = AC
                         AC = Memory [STB]
                         
-                        AC = AC * R1
+                        AC = AC * R
                         AC = AC + SUM
                         SUM = AC    
                         CURR = CURR + 1

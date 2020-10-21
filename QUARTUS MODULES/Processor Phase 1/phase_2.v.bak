@@ -1,0 +1,15 @@
+module phase_2(input clk1, input clk, input [3:0]datain, input [2:0]ctrlsig, output reg [3:0]dataout);
+
+wire [3:0]dout;
+
+reg_type3_16bit PC(.clk(clk), 
+						 .write_en(ctrlsig[0]),
+						 .datain(datain),
+					    .inc(ctrlsig[1]),
+						 .reset(ctrlsig[2]),
+				       .dataout(dout));
+						 
+always @(posedge clk1)
+	dataout <= dout;
+	
+endmodule

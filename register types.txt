@@ -1,0 +1,20 @@
+TYPE1
+registers with write_en  -- >  CoreID,IR,DR,TR,N,M,P,A,B,R  
+				8-bit ==> CoreID,IR,DR,TR,N,M,P
+				16-bit => A,B,R
+
+TYPE2
+registers with write_en and INC  --> AR,R1,STA,STB,STC
+				16-bit ==> AR,R1,STA,STB,STC
+
+TYPE3
+registers with write_en and INC and RESET --> PC,ROW,COL,CURR,
+				8-bit ==> ROW,COL,CURR
+				16-bit => PC
+
+TYPE4   
+registers with write_en and RESET --> SUM
+
+
+
+GOCHINI

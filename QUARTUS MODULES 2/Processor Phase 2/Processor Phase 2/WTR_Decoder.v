@@ -37,17 +37,17 @@ module WTR_Decoder(input [4:0]WTR_sel,
 
 	assign wtr_N  = decoder_out[0];
 	assign wtr_M	 = decoder_out[1];
-   assign wtr_P  = decoder_out[2];
-	assign wtr_ROW  = decoder_out[3];
-	assign wtr_COL = decoder_out[4];
-	assign wtr_CURR  = decoder_out[5];
-	assign wtr_SUM  = decoder_out[6];
-	assign wtr_R  = decoder_out[7];
+    assign wtr_P  = decoder_out[2];
+    assign wtr_r1 = decoder_out[3];
+	assign wtr_ROW  = decoder_out[4];
+	assign wtr_COL = decoder_out[5];
+	assign wtr_CURR  = decoder_out[6];
+	assign wtr_SUM  = decoder_out[7];
 	assign wtr_STA	 = decoder_out[8];
    assign wtr_STB  = decoder_out[9];
 	assign wtr_STC  = decoder_out[10];
 	assign wtr_A = decoder_out[11];
 	assign wtr_B  = decoder_out[12];
-	assign wtr_R1  = decoder_out[13];
+	assign wtr_R  = decoder_out[13];
 
 endmodule

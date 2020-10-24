@@ -1,0 +1,249 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+# Date created = 00:20:16  October 17, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Processor_phase1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY phase_5
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:20:16  OCTOBER 17, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AA23 -to address[6]
+set_location_assignment PIN_AA24 -to address[5]
+set_location_assignment PIN_AB23 -to address[4]
+set_location_assignment PIN_AC24 -to address[2]
+set_location_assignment PIN_AB25 -to address[1]
+set_location_assignment PIN_AC25 -to address[0]
+set_location_assignment PIN_AB26 -to data[7]
+set_location_assignment PIN_AD21 -to data[6]
+set_location_assignment PIN_AC26 -to data[5]
+set_location_assignment PIN_AB27 -to data[4]
+set_location_assignment PIN_H19 -to q[7]
+set_location_assignment PIN_J19 -to q[6]
+set_location_assignment PIN_E18 -to q[5]
+set_location_assignment PIN_AC27 -to datain[0]
+set_location_assignment PIN_AD27 -to datain[1]
+set_location_assignment PIN_AB27 -to datain[2]
+set_location_assignment PIN_AC26 -to datain[3]
+set_location_assignment PIN_G19 -to dataout[0]
+set_location_assignment PIN_F19 -to dataout[1]
+set_location_assignment PIN_E19 -to dataout[2]
+set_location_assignment PIN_F21 -to dataout[3]
+set_location_assignment PIN_Y23 -to write_en
+set_location_assignment PIN_Y24 -to reset
+set_location_assignment PIN_AA22 -to inc
+set_location_assignment PIN_AG14 -to clk2
+set_location_assignment PIN_E22 -to clk3
+set_global_assignment -name SOURCE_FILE ChipMemory.cmp
+set_global_assignment -name VERILOG_FILE abaclock.v
+set_global_assignment -name VERILOG_FILE inc_testing.v
+set_global_assignment -name VERILOG_FILE control_test2.v
+set_global_assignment -name VERILOG_FILE bin27.v
+set_global_assignment -name VERILOG_FILE control.v
+set_global_assignment -name VERILOG_FILE phase_3.v
+set_global_assignment -name VERILOG_FILE phase_4.v
+set_global_assignment -name VERILOG_FILE phase_2.v
+set_global_assignment -name VERILOG_FILE clock_test_Clock_divider.v
+set_global_assignment -name VERILOG_FILE BUS.v
+set_global_assignment -name VERILOG_FILE reg_z.v
+set_global_assignment -name VERILOG_FILE read_buffer_8bit.v
+set_global_assignment -name VERILOG_FILE read_buffer_16bit.v
+set_global_assignment -name VERILOG_FILE WTR_Decoder.v
+set_global_assignment -name VERILOG_FILE WTA_mux.v
+set_global_assignment -name VERILOG_FILE RST_Decoder.v
+set_global_assignment -name VERILOG_FILE OPR_demux.v
+set_global_assignment -name VERILOG_FILE INC_Decoder.v
+set_global_assignment -name VERILOG_FILE alu.v
+set_global_assignment -name VERILOG_FILE reg_type3_8bit.v
+set_global_assignment -name VERILOG_FILE reg_type3_16bit.v
+set_global_assignment -name VERILOG_FILE reg_type2_16bit.v
+set_global_assignment -name VERILOG_FILE reg_type1_8bit.v
+set_global_assignment -name VERILOG_FILE reg_type1_16bit.v
+set_global_assignment -name VERILOG_FILE reg_SUM.v
+set_global_assignment -name VERILOG_FILE reg_ac.v
+set_global_assignment -name VERILOG_FILE reg_type3_16bit_test.v
+set_global_assignment -name VERILOG_FILE phase1.v
+set_global_assignment -name VERILOG_FILE alu_test.v
+set_global_assignment -name VERILOG_FILE memory.v
+set_global_assignment -name VERILOG_FILE control_test.v
+set_global_assignment -name VERILOG_FILE data_mem.v
+set_global_assignment -name VERILOG_FILE counter_6.v
+set_global_assignment -name VERILOG_FILE phase_5.v
+set_location_assignment PIN_G21 -to bus_out[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[7]
+set_location_assignment PIN_G22 -to bus_out[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[6]
+set_location_assignment PIN_G20 -to bus_out[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[5]
+set_location_assignment PIN_H21 -to bus_out[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[4]
+set_location_assignment PIN_E24 -to bus_out[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[3]
+set_location_assignment PIN_E25 -to bus_out[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[2]
+set_location_assignment PIN_E22 -to bus_out[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[1]
+set_location_assignment PIN_E21 -to bus_out[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to bus_out[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to clk1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to clk2
+set_location_assignment PIN_Y24 -to ctrlsig_in[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[9]
+set_location_assignment PIN_AA22 -to ctrlsig_in[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[8]
+set_location_assignment PIN_AA23 -to ctrlsig_in[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[7]
+set_location_assignment PIN_AA24 -to ctrlsig_in[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[6]
+set_location_assignment PIN_AB23 -to ctrlsig_in[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[5]
+set_location_assignment PIN_AB24 -to ctrlsig_in[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[4]
+set_location_assignment PIN_AC24 -to ctrlsig_in[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[3]
+set_location_assignment PIN_AB25 -to ctrlsig_in[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[2]
+set_location_assignment PIN_AC25 -to ctrlsig_in[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[1]
+set_location_assignment PIN_AB26 -to ctrlsig_in[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_in[0]
+set_location_assignment PIN_G17 -to ctrlsig_out[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[9]
+set_location_assignment PIN_J17 -to ctrlsig_out[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[8]
+set_location_assignment PIN_H19 -to ctrlsig_out[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[7]
+set_location_assignment PIN_J19 -to ctrlsig_out[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[6]
+set_location_assignment PIN_E18 -to ctrlsig_out[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[5]
+set_location_assignment PIN_F18 -to ctrlsig_out[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[4]
+set_location_assignment PIN_F21 -to ctrlsig_out[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[3]
+set_location_assignment PIN_E19 -to ctrlsig_out[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[2]
+set_location_assignment PIN_F19 -to ctrlsig_out[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[1]
+set_location_assignment PIN_G19 -to ctrlsig_out[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ctrlsig_out[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to datain[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to datain[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to datain[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to datain[0]
+set_location_assignment PIN_G18 -to segmentA
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentA
+set_location_assignment PIN_M24 -to segmentA1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentA1
+set_location_assignment PIN_AA25 -to segmentA2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentA2
+set_location_assignment PIN_V21 -to segmentA3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentA3
+set_location_assignment PIN_AB19 -to segmentA4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentA4
+set_location_assignment PIN_F22 -to segmentB
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentB
+set_location_assignment PIN_Y22 -to segmentB1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentB1
+set_location_assignment PIN_AA26 -to segmentB2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentB2
+set_location_assignment PIN_U21 -to segmentB3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentB3
+set_location_assignment PIN_AA19 -to segmentB4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentB4
+set_location_assignment PIN_E17 -to segmentC
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentC
+set_location_assignment PIN_W21 -to segmentC1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentC1
+set_location_assignment PIN_Y25 -to segmentC2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentC2
+set_location_assignment PIN_AB20 -to segmentC3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentC3
+set_location_assignment PIN_AG21 -to segmentC4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentC4
+set_location_assignment PIN_L26 -to segmentD
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentD
+set_location_assignment PIN_W22 -to segmentD1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentD1
+set_location_assignment PIN_W26 -to segmentD2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentD2
+set_location_assignment PIN_AA21 -to segmentD3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentD3
+set_location_assignment PIN_AH21 -to segmentD4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentD4
+set_location_assignment PIN_L25 -to segmentE
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentE
+set_location_assignment PIN_W25 -to segmentE1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentE1
+set_location_assignment PIN_Y26 -to segmentE2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentE2
+set_location_assignment PIN_AD24 -to segmentE3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentE3
+set_location_assignment PIN_AE19 -to segmentE4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentE4
+set_location_assignment PIN_J22 -to segmentF
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentF
+set_location_assignment PIN_U23 -to segmentF1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentF1
+set_location_assignment PIN_W27 -to segmentF2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentF2
+set_location_assignment PIN_AF23 -to segmentF3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentF3
+set_location_assignment PIN_AF19 -to segmentF4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentF4
+set_location_assignment PIN_H22 -to segmentG
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentG
+set_location_assignment PIN_U24 -to segmentG1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentG1
+set_location_assignment PIN_W28 -to segmentG2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentG2
+set_location_assignment PIN_Y19 -to segmentG3
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentG3
+set_location_assignment PIN_AE18 -to segmentG4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to segmentG4
+set_global_assignment -name CDF_FILE ../Chain1.cdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

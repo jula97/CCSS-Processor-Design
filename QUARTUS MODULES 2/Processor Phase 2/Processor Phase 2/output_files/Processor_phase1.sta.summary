@@ -1,113 +1,77 @@
 ------------------------------------------------------------
-TimeQuest Timing Analyzer Summary
+Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk2'
-Slack : -2.934
-TNS   : -84.323
+Slack : -4.303
+TNS   : -70.192
 
 Type  : Slow 1200mV 85C Model Setup 'abaclock:clock|clk'
-Slack : -1.832
-TNS   : -32.664
-
-Type  : Slow 1200mV 85C Model Setup 'control:CU|abaclock:clock|clk'
-Slack : -0.056
-TNS   : -0.104
-
-Type  : Slow 1200mV 85C Model Hold 'control:CU|abaclock:clock|clk'
-Slack : 0.421
-TNS   : 0.000
+Slack : -1.814
+TNS   : -18.001
 
 Type  : Slow 1200mV 85C Model Hold 'clk2'
-Slack : 0.590
+Slack : 0.422
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'abaclock:clock|clk'
-Slack : 0.787
+Slack : 0.613
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk2'
 Slack : -3.000
-TNS   : -86.525
+TNS   : -91.665
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'abaclock:clock|clk'
 Slack : -1.285
-TNS   : -30.840
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control:CU|abaclock:clock|clk'
-Slack : -1.285
-TNS   : -11.565
+TNS   : -15.420
 
 Type  : Slow 1200mV 0C Model Setup 'clk2'
-Slack : -2.582
-TNS   : -69.238
+Slack : -3.879
+TNS   : -58.840
 
 Type  : Slow 1200mV 0C Model Setup 'abaclock:clock|clk'
-Slack : -1.615
-TNS   : -27.943
+Slack : -1.666
+TNS   : -16.467
 
-Type  : Slow 1200mV 0C Model Setup 'control:CU|abaclock:clock|clk'
-Slack : 0.046
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'control:CU|abaclock:clock|clk'
+Type  : Slow 1200mV 0C Model Hold 'clk2'
 Slack : 0.382
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk2'
-Slack : 0.524
-TNS   : 0.000
-
 Type  : Slow 1200mV 0C Model Hold 'abaclock:clock|clk'
-Slack : 0.725
+Slack : 0.565
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk2'
 Slack : -3.000
-TNS   : -86.525
+TNS   : -91.665
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'abaclock:clock|clk'
 Slack : -1.285
-TNS   : -30.840
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control:CU|abaclock:clock|clk'
-Slack : -1.285
-TNS   : -11.565
+TNS   : -15.420
 
 Type  : Fast 1200mV 0C Model Setup 'clk2'
-Slack : -0.886
-TNS   : -20.047
+Slack : -1.607
+TNS   : -17.340
 
 Type  : Fast 1200mV 0C Model Setup 'abaclock:clock|clk'
-Slack : -0.418
-TNS   : -5.896
-
-Type  : Fast 1200mV 0C Model Setup 'control:CU|abaclock:clock|clk'
-Slack : 0.486
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'control:CU|abaclock:clock|clk'
-Slack : 0.187
-TNS   : 0.000
+Slack : -0.605
+TNS   : -5.433
 
 Type  : Fast 1200mV 0C Model Hold 'clk2'
-Slack : 0.298
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'abaclock:clock|clk'
-Slack : 0.350
+Slack : 0.264
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk2'
 Slack : -3.000
-TNS   : -72.707
+TNS   : -76.286
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'abaclock:clock|clk'
 Slack : -1.000
-TNS   : -24.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control:CU|abaclock:clock|clk'
-Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 ------------------------------------------------------------

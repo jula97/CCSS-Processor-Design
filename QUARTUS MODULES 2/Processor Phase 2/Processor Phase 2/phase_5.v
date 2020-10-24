@@ -57,7 +57,7 @@ wire common_INC;
 
 abaclock clock(.inclk(clk2),.ena(1),.clk(clk1));
 
-control CU(.clk2(clk2),.ctrlsig(ctrlsig));
+control CU(.clk(clk2),.ctrlsig(ctrlsig));
 
 
 bin27 display_reg_ROW(.clk(clk2),.datain(ROWout),.segmentA(segmentA),.segmentB(segmentB),.segmentC(segmentC),.segmentD(segmentD),
@@ -83,7 +83,7 @@ RST_Decoder   rst(.RST_sel(RESET),.RST_en(ctrlsig[1]),.rst_ROW(row_RST) ,.rst_CO
 
 WTR_Decoder   wrt( .WTR_sel(WTR), .WTR_en(ctrlsig[2]),
 			          .wtr_N(common_INC) , .wtr_M(common_INC), .wtr_P(common_INC) ,.wtr_ROW(wrt_row), .wtr_COL(wrt_col) , .wtr_CURR(wrt_curr) ,
-						 .wtr_SUM(common_INC) ,.wtr_AVAL(common_INC) ,.wtr_STA(common_INC),.wtr_STB(common_INC) ,.wtr_STC(common_INC) ,.wtr_A(common_INC) ,.wtr_B(common_INC) ,.wtr_AC(common_INC) );
+						 .wtr_SUM(common_INC) ,.wtr_R(common_INC) ,.wtr_STA(common_INC),.wtr_STB(common_INC) ,.wtr_STC(common_INC) ,.wtr_A(common_INC) ,.wtr_B(common_INC) ,.wtr_R1(common_INC) );
 
 						 
 reg_type3_8bit   reg_ROW(.clk(clk1), .write_en(wrt_row),.datain(bus), .inc(row_INC), .reset(row_RST), .dataout(ROWout));

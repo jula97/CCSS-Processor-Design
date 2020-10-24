@@ -28,10 +28,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "segmentG",
-					"strict" : false
-				},
-				{
 					"name" : "segmentA1",
 					"strict" : false
 				},
@@ -56,10 +52,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "segmentG1",
-					"strict" : false
-				},
-				{
 					"name" : "segmentA2",
 					"strict" : false
 				},
@@ -81,10 +73,6 @@
 				},
 				{
 					"name" : "segmentF2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG2",
 					"strict" : false
 				},
 				{
@@ -172,15 +160,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "ctrlsig_out[5]",
-					"strict" : false
-				},
-				{
 					"name" : "ctrlsig_out[6]",
 					"strict" : false
 				},
 				{
+					"name" : "ctrlsig_out[7]",
+					"strict" : false
+				},
+				{
 					"name" : "ctrlsig_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[9]",
 					"strict" : false
 				},
 				{

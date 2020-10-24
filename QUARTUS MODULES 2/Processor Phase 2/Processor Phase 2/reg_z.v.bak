@@ -1,0 +1,15 @@
+module reg_z(input clk,
+				 input reset,
+				 input datain,
+								
+				 output reg dataout = 0);
+
+	always @ (posedge clk)
+		begin
+			if (reset == 1)
+				dataout <= 0;
+			else
+				dataout <= datain;
+		end
+		
+endmodule

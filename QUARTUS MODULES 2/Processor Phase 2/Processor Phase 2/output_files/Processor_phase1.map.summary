@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Oct 24 12:20:53 2020
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Processor_phase1
+Top-level Entity Name : phase_5
+Family : Cyclone IV E
+Total logic elements : 125
+    Total combinational functions : 102
+    Dedicated logic registers : 98
+Total registers : 98
+Total pins : 69
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

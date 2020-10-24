@@ -8,13 +8,13 @@ module WTR_Decoder(input [4:0]WTR_sel,
 			  output wtr_COL ,
 			  output wtr_CURR ,
            output wtr_SUM ,
-			  output wtr_AVAL ,
+			  output wtr_R ,
 			  output wtr_STA,
 			  output wtr_STB ,
 			  output wtr_STC ,
 			  output wtr_A ,
 			  output wtr_B ,
-           output wtr_AC );
+           output wtr_R1 );
 	
 	wire[13:0]decoder_out;
 	
@@ -42,12 +42,12 @@ module WTR_Decoder(input [4:0]WTR_sel,
 	assign wtr_COL = decoder_out[4];
 	assign wtr_CURR  = decoder_out[5];
 	assign wtr_SUM  = decoder_out[6];
-	assign wtr_AVAL  = decoder_out[7];
+	assign wtr_R  = decoder_out[7];
 	assign wtr_STA	 = decoder_out[8];
    assign wtr_STB  = decoder_out[9];
 	assign wtr_STC  = decoder_out[10];
 	assign wtr_A = decoder_out[11];
 	assign wtr_B  = decoder_out[12];
-	assign wtr_AC  = decoder_out[13];
+	assign wtr_R1  = decoder_out[13];
 
 endmodule

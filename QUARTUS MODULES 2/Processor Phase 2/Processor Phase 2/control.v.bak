@@ -1,0 +1,74 @@
+module control(input clk,
+					output reg [12:0] ctrlsig);
+
+reg [5:0] present = 6'd0;
+reg [5:0] next = 6'd0;
+
+parameter
+idle = 6'd0,
+add1 = 6'd1,
+add2 = 6'd2,
+add3 = 6'd3,
+add4 = 6'd4,
+add5 = 6'd5,
+add6 = 6'd6,
+add7 = 6'd7,
+add8 = 6'd8;
+
+always @(posedge clk)
+	present <= next;
+
+always @(present)
+case(present)
+idle: begin
+ctrlsig <= 13'b0000000000000 ;
+next <= add1 ;
+end
+
+add1: begin
+ctrlsig <= 13'b0000000000100 ;
+next <= add2 ;
+end
+
+add2: begin
+ctrlsig <= 13'b0000010000010 ;
+next <= add3 ;
+end
+
+add3: begin
+ctrlsig <= 13'b0000000000001 ;
+next <= add4 ;
+end
+
+add4: begin
+ctrlsig <= 13'b0001100100000 ;
+next <= add5 ;
+end
+
+add5: begin
+ctrlsig <= 13'b0000100101000 ;
+next <= add6 ;
+end
+
+add6: begin
+ctrlsig <= 13'b1000000000000 ;
+next <= add7 ;
+end
+
+add7: begin
+ctrlsig <= 13'b1000000000000 ;
+next <= add8 ;
+end
+
+add8: begin
+ctrlsig <= 13'b1000000000000 ;
+next <= 6'b111111 ;
+end
+
+default: begin 
+ctrlsig <= 13'b0000000000000 ;
+end
+
+endcase
+
+endmodule

@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFAB8475E36",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffab8475e35: sld_chi + 0x15e35 (?read_ram_value_at@CHI_CONTROL_NODE_MOD_RAM@@QEAA_NKHPEAEK@Z + 0xa5)\n\t0x7ffa483379c2: sld_redq + 0x179c2 (?redq_read_ram@@YA_NPEAVCHI_CONTROL_NODE_MOD_RAM@@HHHPEAD@Z + 0x72)\n\t0x7ffa48335bae: sld_redq + 0x15bae (?read_ram@REDQ_NODE_WIDGET@@QEAA_NHH@Z + 0x6e)\n\t0x7ffa48338233: sld_redq + 0x18233 (?run@REDQ_THREAD_WIDGET@@MEAAXXZ + 0x83)\n\t 0x711f95b7: QtCore4 + 0x295b7 (?start@QThread@@QEAAXW4Priority@1@@Z + 0x427)\n\t0x7ffa9f604f7e: MSVCR120 + 0x24f7e (_beginthreadex + 0x106)\n\t0x7ffa9f605125: MSVCR120 + 0x25125 (_endthreadex + 0x191)\n\t0x7ffaca027bd3: KERNEL32 + 0x17bd3 (BaseThreadInitThunk + 0x13)\n\t0x7ffaca6ace50: ntdll + 0x6ce50 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "16.1.0",
+		"build" : "196",
+		"edition" : "Lite Edition"
+	}
+}

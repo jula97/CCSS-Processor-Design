@@ -1,0 +1,10 @@
+module dramtest(input clk, 
+					 input wren, 
+					 input rden, 
+					 input address, 
+					 input data, 
+					 output q);
+
+memmod DRAM(.data(data),.wren(wren), .address(address), .rden(rden), .clock(clk), .q(q));
+
+endmodule

@@ -1,0 +1,201 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "segmentA",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB",
+					"strict" : false
+				},
+				{
+					"name" : "segmentC",
+					"strict" : false
+				},
+				{
+					"name" : "segmentD",
+					"strict" : false
+				},
+				{
+					"name" : "segmentE",
+					"strict" : false
+				},
+				{
+					"name" : "segmentF",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA1",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB1",
+					"strict" : false
+				},
+				{
+					"name" : "segmentC1",
+					"strict" : false
+				},
+				{
+					"name" : "segmentD1",
+					"strict" : false
+				},
+				{
+					"name" : "segmentE1",
+					"strict" : false
+				},
+				{
+					"name" : "segmentF1",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA2",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB2",
+					"strict" : false
+				},
+				{
+					"name" : "segmentC2",
+					"strict" : false
+				},
+				{
+					"name" : "segmentD2",
+					"strict" : false
+				},
+				{
+					"name" : "segmentE2",
+					"strict" : false
+				},
+				{
+					"name" : "segmentF2",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentC3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentD3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentE3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentF3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentG3",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA4",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB4",
+					"strict" : false
+				},
+				{
+					"name" : "segmentC4",
+					"strict" : false
+				},
+				{
+					"name" : "segmentD4",
+					"strict" : false
+				},
+				{
+					"name" : "segmentE4",
+					"strict" : false
+				},
+				{
+					"name" : "segmentF4",
+					"strict" : false
+				},
+				{
+					"name" : "segmentG4",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrlsig_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[0]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[1]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[2]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

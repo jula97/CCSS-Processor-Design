@@ -89,7 +89,7 @@ def singlecore(ID):
     COL = 0
     CURR = 0
     Z = 0
-    AVAL = 0 #Constant value
+    R1 = 0 #Constant value
     SUM = 0 #Constant value
 
     N, M, P, STA, STB, STC, A, B, State = map(int,MultiCore(Memory, CoreID=ID))
@@ -106,6 +106,8 @@ def singlecore(ID):
             
             while(True): #mloop1
                 AC = COL
+
+                Z = 0
                 if(P==AC):
                     Z = 1
                 if(Z==0):
@@ -130,10 +132,11 @@ def singlecore(ID):
                             break
                         
                         AC = Memory [STA]
-                        AVAL = AC
+
+                        R = AC
                         AC = Memory [STB]
                         
-                        AC = AC * AVAL
+                        AC = AC * R
                         AC = AC + SUM
                         SUM = AC    
                         CURR = CURR + 1

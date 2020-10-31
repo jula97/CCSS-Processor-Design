@@ -1,0 +1,68 @@
+-- Copyright (C) 2019  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	000  :   0000000000000010;
+	001  :   0000000000000001;
+	002  :   0000000000000101;
+	[003..005]  :   0000000000000010;
+	006  :   0000000000000101;
+	007  :   0000000000001001;
+	008  :   0000000000000010;
+	009  :   0000000000000011;
+	00A  :   0000000000000101;
+	00B  :   0000000000001010;
+	00C  :   0000000000000010;
+	00D  :   0000000000000100;
+	00E  :   0000000000000101;
+	00F  :   0000000000001011;
+	010  :   0000000000001110;
+	011  :   0000000000001100;
+	012  :   0000000000000110;
+	013  :   0000000000000111;
+	014  :   0000000000001000;
+	015  :   0000000000000010;
+	016  :   0000000000010000;
+	017  :   0000000000101000;
+	018  :   0000000000010001;
+	019  :   0000000000001001;
+	01A  :   0000000000000101;
+	01B  :   0000000000000100;
+	01C  :   0000000000010001;
+	01D  :   0000000000001010;
+	01E  :   0000000000001001;
+	01F  :   0000000000000100;
+	020  :   0000000000000001;
+	021  :   0000000000001000;
+	022  :   0000000000000101;
+	023  :   0000000000001000;
+	024  :   0000000000001101;
+	025  :   0000000000011100;
+	026  :   0000000000000100;
+	027  :   0000000000010010;
+	028  :   0000000000000110;
+	029  :   0000000000001000;
+	02A  :   0000000000010010;
+	02B  :   0000000000001011;
+	[02C..0FF]  :   0000000000000000;
+END;

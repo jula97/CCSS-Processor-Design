@@ -1,0 +1,26 @@
+module topmemory(input [15:0]c1_AR,
+						input [15:0]c2_AR,
+						output [15:0]c1_Dmemout,
+						output [15:0]c2_Dmemout);
+
+wire [1:0]mode_select = 2'b01;
+wire [15:0]AR1 = 16'd0;
+wire [15:0]AR2 = 16'd0;
+wire common_AR = 16'd0;
+
+
+assign mode_select = (c1_AR==c2_AR) ? 2'b01:
+							(c1_AR!=c2_AR) ? 2'b11:
+							2'b00;
+							
+assign AR1 = (mode_select==2'b11) ? c1_AR:
+				 16'd0;
+				 
+assign AR2 = (mode_select==2'b11) ? c2_AR:
+				 16'd0;
+				 
+assign common_AR = (mode_select==2'b01) ? (c1_AR|c2_AR):
+                   16'd0;
+						
+						
+

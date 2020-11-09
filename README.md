@@ -54,5 +54,5 @@ Tools ⇒ In-System Memory Content Editor
 
 For a more interactive respresentation, use the link,
 ```sh
-https://infogram.com/line-chart-1hmr6g7d7djoz6n?live
+[link](https://infogram.com/line-chart-1hmr6g7d7djoz6n?live)
 ```

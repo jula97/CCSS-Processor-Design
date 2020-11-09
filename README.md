@@ -41,3 +41,13 @@ Tools ⇒ In-System Memory Content Editor
 6. Clock enable switch is **`SW[16]`**.
 
 7. After the processing is completed, Read **`IRAM`** and **`DRAM`** for results.
+
+# 4. Compiler
+
+# 5. DRAMs
+
+# 6. IRAMs
+
+# 7. Results
+
+![Benjamin Bannekat](https://infogram.com/line-chart-1hmr6g7d7djoz6n?live).

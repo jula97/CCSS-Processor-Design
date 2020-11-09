@@ -52,5 +52,5 @@ Tools ⇒ In-System Memory Content Editor
 
 ![Performance](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/7.Results/Results.png).
 
-For a more interactive respresentation, use this [link](https://infogram.com/line-chart-1hmr6g7d7djoz6n?live)
+For a more interactive respresentation, use this [link](https://infogram.com/line-chart-1hmr6g7d7djoz6n?live).
 

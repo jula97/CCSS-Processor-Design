@@ -41,6 +41,35 @@ Tools ⇒ In-System Memory Content Editor
 **6.** Clock enable switch is **`SW[16]`**.
 
 **7.** After the processing is completed, Read **`IRAM`** and **`DRAM`** for results.
+&nbsp;  
+&nbsp;
+## Followings are the **`Verilog HDL`** files used in the project.
+
+| File | Description |
+| --- | --- |
+| `multicore1.v` | Instantiates 4 cores and Memory modules |
+| `scaledclock.v` | Module to generate a slower clock form 50M |
+| `phase6.v` | Integrates all the modules needed for a core |
+| `memory_control.v` | Contains the registers and DRAM needed for multicore memory |
+| `mem_state.v` | Contains the state machine needed to control the DRAM |
+| `memandFSM.v` | Instantiates mem_control and mem_state for testing |
+| `data_memory.v` | DRAM initiated from IP block |
+| `instruction_memory.v` | IRAM initiated from IP block |
+| `outputmux.v` | Multiplexer to select the core for LEDs and 7 segment displays |
+| `bin27.v` | Module to convert binary data to format displayed on 7 segment display |
+| `control.v` | Control unit of the core |
+| `alu.v` | Arithmatic and logic unit of the core |
+| `BUS.v` | Data bus of the core |
+| `INC_Decoder.v` | Decoder to generate increment control signals for registers |
+| `RESET_Decoder.v` | Decoder to generate reset control signals for registers |
+| `WTR_Decoder.v` | Decoder to generate write enable control signals for registers |
+| `OPR_demux.v` | Demultiplexer to send selection controls for combinational units |
+| `WTA_mux.v` | Multiplexer to select the register to be written to the bus |
+| `reg_type1_16bit.v` | 16 bit regiter with write enable control signal |
+| `reg_type2_16bit.v` | 16 bit regiter with write enable and increment control signals |
+| `reg_type3_16bit.v` | 16 bit regiter with write enable, increment and reset control signals |
+| `reg_ac.v` | 16 bit regiter for accumilator |
+| `reg_SUM.v` | 16 bit regiter with write enable and reset control signals |
 
 # 4. Compiler
 

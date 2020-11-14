@@ -90,3 +90,14 @@ Contains `.mif` file with the assembly code written to IRAM. (Manually produced 
 
 For a more interactive respresentation, use this [link](https://infogram.com/line-chart-1hmr6g7d7djoz6n?live).
 
+# ISA.pdf
+![ISA](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/ISA-1.png).
+
+# Datapaths.pdf
+![Datapaths](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/Datapaths-1.jpg).
+
+# Microsequencing.pdf
+
+# Statemachine.pdf
+
+

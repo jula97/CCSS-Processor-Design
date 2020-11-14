@@ -1,3 +1,0 @@
-Warning (10268): Verilog HDL information at control.v(36): always construct contains both blocking and non-blocking assignments File: C:/Users/sthir/Desktop/CCSS-Processor-Design/QUARTUS MODULES 2/Processor Phase 2/Processor Phase 2/control.v Line: 36
-Info (10281): Verilog HDL Declaration information at phase1.v(8): object "dataout" differs only in case from object "Dataout" in the same scope File: C:/Users/sthir/Desktop/CCSS-Processor-Design/QUARTUS MODULES 2/Processor Phase 2/Processor Phase 2/phase1.v Line: 8
-Info (10281): Verilog HDL Declaration information at phase_5.v(41): object "INC" differs only in case from object "inc" in the same scope File: C:/Users/sthir/Desktop/CCSS-Processor-Design/QUARTUS MODULES 2/Processor Phase 2/Processor Phase 2/phase_5.v Line: 41

@@ -11,6 +11,7 @@ Two multicore algorithms are evaluated.
 - **Block**-A block of one or many rows are calculated by a core.
 
 # 2. Editable Documentation
+Contains documentation required for the report.
 
 # 3. Quartus Files
 To test the processor locally, follow the following procedure.
@@ -74,11 +75,15 @@ Tools ⇒ In-System Memory Content Editor
 | `read_buffer_16bit.v` | 16 bit buffer for register read enable control signal |
 
 # 4. Compiler
+Converts the text file to a `.mif` file which can be written to the `DRAM`.
 
 # 5. DRAMs
-
+Contains `.mif` files genereated from the compiler. DRAMs required for different test cases are available.
+```sh
+EX: DRAM3-4.mif ⇒ .mif for 3-row matrix to be computed using 4 cores.
+```
 # 6. IRAMs
-
+Contains `.mif` file with the assembly code written to IRAM. (Manually produced by using opcodes for every instruction).
 # 7. Results
 
 ![Performance](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/7.Results/Results.png).

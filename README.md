@@ -97,7 +97,8 @@ For a more interactive respresentation, use this [link](https://infogram.com/lin
 ![Datapaths](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/Datapaths-1.jpg).
 
 # Microsequencing.pdf
+![Microsequencing](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/Microsequencing-1.jpg).
 
 # Statemachine.pdf
-
+![Statemachine](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/Statemachine.jpg).
 

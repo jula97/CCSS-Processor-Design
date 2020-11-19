@@ -93,6 +93,11 @@ For a more interactive respresentation, use this [link](https://infogram.com/lin
 # ISA.pdf
 ![ISA](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/ISA-1.jpg).
 
+# Memory Architecture.pdf
+&nbsp;
+![Memory Architecture](https://github.com/jula97/CCSS-Processor-Design/blob/Master/2.Editable%20Documentation/mem.jpg).
+&nbsp;
+
 # Datapaths.pdf
 ![Datapaths](https://github.com/jula97/CCSS-Processor-Design/blob/Devel-arrange/2.Editable%20Documentation/Datapaths-1.jpg).
 

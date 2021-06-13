@@ -66,9 +66,9 @@ Tools ⇒ In-System Memory Content Editor
 | `WTR_Decoder.v` | Decoder to generate write enable control signals for registers |
 | `OPR_demux.v` | Demultiplexer to send selection controls for combinational units |
 | `WTA_mux.v` | Multiplexer to select the register to be written to the bus |
-| `reg_type1_16bit.v` | 16 bit regiter with write enable control signal |
-| `reg_type2_16bit.v` | 16 bit regiter with write enable and increment control signals |
-| `reg_type3_16bit.v` | 16 bit regiter with write enable, increment and reset control signals |
+| `reg_type1_16bit.v` | 16 bit register with write enable control signal |
+| `reg_type2_16bit.v` | 16 bit register with write enable and increment control signals |
+| `reg_type3_16bit.v` | 16 bit register with write enable, increment and reset control signals |
 | `reg_ac.v` | 16 bit regiter for accumilator |
 | `reg_SUM.v` | 16 bit regiter with write enable and reset control signals |
 | `reg_z.v` | 1 bit regiter with for ALU flag |

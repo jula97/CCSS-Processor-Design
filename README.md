@@ -69,9 +69,9 @@ Tools ⇒ In-System Memory Content Editor
 | `reg_type1_16bit.v` | 16 bit register with write enable control signal |
 | `reg_type2_16bit.v` | 16 bit register with write enable and increment control signals |
 | `reg_type3_16bit.v` | 16 bit register with write enable, increment and reset control signals |
-| `reg_ac.v` | 16 bit regiter for accumilator |
-| `reg_SUM.v` | 16 bit regiter with write enable and reset control signals |
-| `reg_z.v` | 1 bit regiter with for ALU flag |
+| `reg_ac.v` | 16 bit register for accumilator |
+| `reg_SUM.v` | 16 bit register with write enable and reset control signals |
+| `reg_z.v` | 1 bit register with for ALU flag |
 | `read_buffer_16bit.v` | 16 bit buffer for register read enable control signal |
 
 # 4. Compiler

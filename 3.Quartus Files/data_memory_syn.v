@@ -34,14 +34,14 @@
 //https://fpgasoftware.intel.com/eula.
 
 
-//altsyncram CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" DEVICE_FAMILY="Cyclone IV E" ENABLE_RUNTIME_MOD="YES" INIT_FILE="DRAM4-4.mif" INSTANCE_NAME="DRAM" NUMWORDS_A=256 OPERATION_MODE="SINGLE_PORT" OUTDATA_ACLR_A="NONE" OUTDATA_REG_A="CLOCK0" POWER_UP_UNINITIALIZED="FALSE" read_during_write_mode_port_a="DONT_CARE" WIDTH_A=16 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 address_a clock0 data_a q_a wren_a
+//altsyncram CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" DEVICE_FAMILY="Cyclone IV E" ENABLE_RUNTIME_MOD="YES" INIT_FILE="DRAM.mif" INSTANCE_NAME="DRAM" NUMWORDS_A=256 OPERATION_MODE="SINGLE_PORT" OUTDATA_ACLR_A="NONE" OUTDATA_REG_A="CLOCK0" POWER_UP_UNINITIALIZED="FALSE" read_during_write_mode_port_a="DONT_CARE" WIDTH_A=16 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 address_a clock0 data_a q_a wren_a
 //VERSION_BEGIN 20.1 cbx_altera_syncram_nd_impl 2020:06:05:12:04:51:SJ cbx_altsyncram 2020:06:05:12:04:51:SJ cbx_cycloneii 2020:06:05:12:04:51:SJ cbx_lpm_add_sub 2020:06:05:12:04:51:SJ cbx_lpm_compare 2020:06:05:12:04:51:SJ cbx_lpm_decode 2020:06:05:12:04:51:SJ cbx_lpm_mux 2020:06:05:12:04:51:SJ cbx_mgl 2020:06:05:12:11:10:SJ cbx_nadder 2020:06:05:12:04:51:SJ cbx_stratix 2020:06:05:12:04:51:SJ cbx_stratixii 2020:06:05:12:04:51:SJ cbx_stratixiii 2020:06:05:12:04:51:SJ cbx_stratixv 2020:06:05:12:04:51:SJ cbx_util_mgl 2020:06:05:12:04:51:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
 
-//altsyncram ADDRESS_ACLR_B="NONE" ADDRESS_REG_B="CLOCK1" CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" DEVICE_FAMILY="Cyclone IV E" ENABLE_RUNTIME_MOD="NO" INDATA_ACLR_B="NONE" INDATA_REG_B="CLOCK1" INIT_FILE="DRAM4-4.mif" NUMWORDS_A=256 NUMWORDS_B=256 OPERATION_MODE="BIDIR_DUAL_PORT" OUTDATA_ACLR_A="NONE" OUTDATA_ACLR_B="NONE" OUTDATA_REG_A="CLOCK0" OUTDATA_REG_B="UNREGISTERED" RDCONTROL_REG_B="CLOCK1" read_during_write_mode_port_a="NEW_DATA_NO_NBE_READ" WIDTH_A=16 WIDTH_B=16 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 WIDTHAD_B=8 WRCONTROL_ACLR_B="NONE" WRCONTROL_WRADDRESS_REG_B="CLOCK1" address_a address_b clock0 clock1 data_a data_b q_a q_b wren_a wren_b
+//altsyncram ADDRESS_ACLR_B="NONE" ADDRESS_REG_B="CLOCK1" CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" DEVICE_FAMILY="Cyclone IV E" ENABLE_RUNTIME_MOD="NO" INDATA_ACLR_B="NONE" INDATA_REG_B="CLOCK1" INIT_FILE="DRAM.mif" NUMWORDS_A=256 NUMWORDS_B=256 OPERATION_MODE="BIDIR_DUAL_PORT" OUTDATA_ACLR_A="NONE" OUTDATA_ACLR_B="NONE" OUTDATA_REG_A="CLOCK0" OUTDATA_REG_B="UNREGISTERED" RDCONTROL_REG_B="CLOCK1" read_during_write_mode_port_a="NEW_DATA_NO_NBE_READ" WIDTH_A=16 WIDTH_B=16 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 WIDTHAD_B=8 WRCONTROL_ACLR_B="NONE" WRCONTROL_WRADDRESS_REG_B="CLOCK1" address_a address_b clock0 clock1 data_a data_b q_a q_b wren_a wren_b
 //VERSION_BEGIN 20.1 cbx_altera_syncram_nd_impl 2020:06:05:12:04:51:SJ cbx_altsyncram 2020:06:05:12:04:51:SJ cbx_cycloneii 2020:06:05:12:04:51:SJ cbx_lpm_add_sub 2020:06:05:12:04:51:SJ cbx_lpm_compare 2020:06:05:12:04:51:SJ cbx_lpm_decode 2020:06:05:12:04:51:SJ cbx_lpm_mux 2020:06:05:12:04:51:SJ cbx_mgl 2020:06:05:12:11:10:SJ cbx_nadder 2020:06:05:12:04:51:SJ cbx_stratix 2020:06:05:12:04:51:SJ cbx_stratixii 2020:06:05:12:04:51:SJ cbx_stratixiii 2020:06:05:12:04:51:SJ cbx_stratixv 2020:06:05:12:04:51:SJ cbx_util_mgl 2020:06:05:12:04:51:SJ  VERSION_END
 
 //synthesis_resources = M9K 1 
@@ -164,10 +164,9 @@ module  data_memory_altsyncram1
 		ram_block3a_0.clk1_core_clock_enable = "none",
 		ram_block3a_0.clk1_input_clock_enable = "none",
 		ram_block3a_0.connectivity_checking = "OFF",
-		ram_block3a_0.init_file = "DRAM4-4.mif",
+		ram_block3a_0.init_file = "DRAM.mif",
 		ram_block3a_0.init_file_layout = "port_a",
 		ram_block3a_0.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_0.mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000019AAF0,
 		ram_block3a_0.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_0.operation_mode = "bidir_dual_port",
 		ram_block3a_0.port_a_address_width = 8,
@@ -239,10 +238,9 @@ module  data_memory_altsyncram1
 		ram_block3a_1.clk1_core_clock_enable = "none",
 		ram_block3a_1.clk1_input_clock_enable = "none",
 		ram_block3a_1.connectivity_checking = "OFF",
-		ram_block3a_1.init_file = "DRAM4-4.mif",
+		ram_block3a_1.init_file = "DRAM.mif",
 		ram_block3a_1.init_file_layout = "port_a",
 		ram_block3a_1.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_1.mem_init0 = 256'h00000000000000000000000000000000000000000000000000000000001E3374,
 		ram_block3a_1.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_1.operation_mode = "bidir_dual_port",
 		ram_block3a_1.port_a_address_width = 8,
@@ -314,10 +312,9 @@ module  data_memory_altsyncram1
 		ram_block3a_2.clk1_core_clock_enable = "none",
 		ram_block3a_2.clk1_input_clock_enable = "none",
 		ram_block3a_2.connectivity_checking = "OFF",
-		ram_block3a_2.init_file = "DRAM4-4.mif",
+		ram_block3a_2.init_file = "DRAM.mif",
 		ram_block3a_2.init_file_layout = "port_a",
 		ram_block3a_2.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_2.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000353C7B,
 		ram_block3a_2.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_2.operation_mode = "bidir_dual_port",
 		ram_block3a_2.port_a_address_width = 8,
@@ -389,10 +386,9 @@ module  data_memory_altsyncram1
 		ram_block3a_3.clk1_core_clock_enable = "none",
 		ram_block3a_3.clk1_input_clock_enable = "none",
 		ram_block3a_3.connectivity_checking = "OFF",
-		ram_block3a_3.init_file = "DRAM4-4.mif",
+		ram_block3a_3.init_file = "DRAM.mif",
 		ram_block3a_3.init_file_layout = "port_a",
 		ram_block3a_3.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_3.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000404020,
 		ram_block3a_3.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_3.operation_mode = "bidir_dual_port",
 		ram_block3a_3.port_a_address_width = 8,
@@ -464,10 +460,9 @@ module  data_memory_altsyncram1
 		ram_block3a_4.clk1_core_clock_enable = "none",
 		ram_block3a_4.clk1_input_clock_enable = "none",
 		ram_block3a_4.connectivity_checking = "OFF",
-		ram_block3a_4.init_file = "DRAM4-4.mif",
+		ram_block3a_4.init_file = "DRAM.mif",
 		ram_block3a_4.init_file_layout = "port_a",
 		ram_block3a_4.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_4.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000040,
 		ram_block3a_4.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_4.operation_mode = "bidir_dual_port",
 		ram_block3a_4.port_a_address_width = 8,
@@ -539,10 +534,9 @@ module  data_memory_altsyncram1
 		ram_block3a_5.clk1_core_clock_enable = "none",
 		ram_block3a_5.clk1_input_clock_enable = "none",
 		ram_block3a_5.connectivity_checking = "OFF",
-		ram_block3a_5.init_file = "DRAM4-4.mif",
+		ram_block3a_5.init_file = "DRAM.mif",
 		ram_block3a_5.init_file_layout = "port_a",
 		ram_block3a_5.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_5.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_5.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_5.operation_mode = "bidir_dual_port",
 		ram_block3a_5.port_a_address_width = 8,
@@ -614,10 +608,9 @@ module  data_memory_altsyncram1
 		ram_block3a_6.clk1_core_clock_enable = "none",
 		ram_block3a_6.clk1_input_clock_enable = "none",
 		ram_block3a_6.connectivity_checking = "OFF",
-		ram_block3a_6.init_file = "DRAM4-4.mif",
+		ram_block3a_6.init_file = "DRAM.mif",
 		ram_block3a_6.init_file_layout = "port_a",
 		ram_block3a_6.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_6.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_6.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_6.operation_mode = "bidir_dual_port",
 		ram_block3a_6.port_a_address_width = 8,
@@ -689,10 +682,9 @@ module  data_memory_altsyncram1
 		ram_block3a_7.clk1_core_clock_enable = "none",
 		ram_block3a_7.clk1_input_clock_enable = "none",
 		ram_block3a_7.connectivity_checking = "OFF",
-		ram_block3a_7.init_file = "DRAM4-4.mif",
+		ram_block3a_7.init_file = "DRAM.mif",
 		ram_block3a_7.init_file_layout = "port_a",
 		ram_block3a_7.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_7.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_7.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_7.operation_mode = "bidir_dual_port",
 		ram_block3a_7.port_a_address_width = 8,
@@ -764,10 +756,9 @@ module  data_memory_altsyncram1
 		ram_block3a_8.clk1_core_clock_enable = "none",
 		ram_block3a_8.clk1_input_clock_enable = "none",
 		ram_block3a_8.connectivity_checking = "OFF",
-		ram_block3a_8.init_file = "DRAM4-4.mif",
+		ram_block3a_8.init_file = "DRAM.mif",
 		ram_block3a_8.init_file_layout = "port_a",
 		ram_block3a_8.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_8.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_8.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_8.operation_mode = "bidir_dual_port",
 		ram_block3a_8.port_a_address_width = 8,
@@ -839,10 +830,9 @@ module  data_memory_altsyncram1
 		ram_block3a_9.clk1_core_clock_enable = "none",
 		ram_block3a_9.clk1_input_clock_enable = "none",
 		ram_block3a_9.connectivity_checking = "OFF",
-		ram_block3a_9.init_file = "DRAM4-4.mif",
+		ram_block3a_9.init_file = "DRAM.mif",
 		ram_block3a_9.init_file_layout = "port_a",
 		ram_block3a_9.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_9.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_9.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_9.operation_mode = "bidir_dual_port",
 		ram_block3a_9.port_a_address_width = 8,
@@ -914,10 +904,9 @@ module  data_memory_altsyncram1
 		ram_block3a_10.clk1_core_clock_enable = "none",
 		ram_block3a_10.clk1_input_clock_enable = "none",
 		ram_block3a_10.connectivity_checking = "OFF",
-		ram_block3a_10.init_file = "DRAM4-4.mif",
+		ram_block3a_10.init_file = "DRAM.mif",
 		ram_block3a_10.init_file_layout = "port_a",
 		ram_block3a_10.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_10.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_10.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_10.operation_mode = "bidir_dual_port",
 		ram_block3a_10.port_a_address_width = 8,
@@ -989,10 +978,9 @@ module  data_memory_altsyncram1
 		ram_block3a_11.clk1_core_clock_enable = "none",
 		ram_block3a_11.clk1_input_clock_enable = "none",
 		ram_block3a_11.connectivity_checking = "OFF",
-		ram_block3a_11.init_file = "DRAM4-4.mif",
+		ram_block3a_11.init_file = "DRAM.mif",
 		ram_block3a_11.init_file_layout = "port_a",
 		ram_block3a_11.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_11.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_11.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_11.operation_mode = "bidir_dual_port",
 		ram_block3a_11.port_a_address_width = 8,
@@ -1064,10 +1052,9 @@ module  data_memory_altsyncram1
 		ram_block3a_12.clk1_core_clock_enable = "none",
 		ram_block3a_12.clk1_input_clock_enable = "none",
 		ram_block3a_12.connectivity_checking = "OFF",
-		ram_block3a_12.init_file = "DRAM4-4.mif",
+		ram_block3a_12.init_file = "DRAM.mif",
 		ram_block3a_12.init_file_layout = "port_a",
 		ram_block3a_12.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_12.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_12.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_12.operation_mode = "bidir_dual_port",
 		ram_block3a_12.port_a_address_width = 8,
@@ -1139,10 +1126,9 @@ module  data_memory_altsyncram1
 		ram_block3a_13.clk1_core_clock_enable = "none",
 		ram_block3a_13.clk1_input_clock_enable = "none",
 		ram_block3a_13.connectivity_checking = "OFF",
-		ram_block3a_13.init_file = "DRAM4-4.mif",
+		ram_block3a_13.init_file = "DRAM.mif",
 		ram_block3a_13.init_file_layout = "port_a",
 		ram_block3a_13.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_13.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_13.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_13.operation_mode = "bidir_dual_port",
 		ram_block3a_13.port_a_address_width = 8,
@@ -1214,10 +1200,9 @@ module  data_memory_altsyncram1
 		ram_block3a_14.clk1_core_clock_enable = "none",
 		ram_block3a_14.clk1_input_clock_enable = "none",
 		ram_block3a_14.connectivity_checking = "OFF",
-		ram_block3a_14.init_file = "DRAM4-4.mif",
+		ram_block3a_14.init_file = "DRAM.mif",
 		ram_block3a_14.init_file_layout = "port_a",
 		ram_block3a_14.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_14.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_14.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_14.operation_mode = "bidir_dual_port",
 		ram_block3a_14.port_a_address_width = 8,
@@ -1289,10 +1274,9 @@ module  data_memory_altsyncram1
 		ram_block3a_15.clk1_core_clock_enable = "none",
 		ram_block3a_15.clk1_input_clock_enable = "none",
 		ram_block3a_15.connectivity_checking = "OFF",
-		ram_block3a_15.init_file = "DRAM4-4.mif",
+		ram_block3a_15.init_file = "DRAM.mif",
 		ram_block3a_15.init_file_layout = "port_a",
 		ram_block3a_15.logical_ram_name = "ALTSYNCRAM",
-		ram_block3a_15.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block3a_15.mixed_port_feed_through_mode = "dont_care",
 		ram_block3a_15.operation_mode = "bidir_dual_port",
 		ram_block3a_15.port_a_address_width = 8,
@@ -1390,6 +1374,10 @@ module  data_memory_altsyncram
 		mgl_prim2.widthad = 8;
 	assign
 		q_a = wire_altsyncram1_q_a;
+	initial/*synthesis enable_verilog_initial_construct*/
+ 	begin
+		$display("Warning: Memory initialization file DRAM.mif is not found. This may result in inconsistent simulation results.");
+	end
 endmodule //data_memory_altsyncram
 //VALID FILE
 
@@ -1451,7 +1439,7 @@ endmodule
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "1"
 // Retrieval info: PRIVATE: JTAG_ID STRING "DRAM"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
-// Retrieval info: PRIVATE: MIFfilename STRING "DRAM4-4.mif"
+// Retrieval info: PRIVATE: MIFfilename STRING "DRAM.mif"
 // Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "256"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "2"
@@ -1468,7 +1456,7 @@ endmodule
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
-// Retrieval info: CONSTANT: INIT_FILE STRING "DRAM4-4.mif"
+// Retrieval info: CONSTANT: INIT_FILE STRING "DRAM.mif"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
 // Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=DRAM"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Jul 11 23:02:38 2021
+Analysis & Synthesis Status : Successful - Sun Jul 11 23:14:07 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : CCSS_PROCESSOR
 Top-level Entity Name : multicore1
 Family : Cyclone IV E
-Total logic elements : 6,242
-    Total combinational functions : 5,517
+Total logic elements : 6,239
+    Total combinational functions : 5,514
     Dedicated logic registers : 1,885
 Total registers : 1885
 Total pins : 54

@@ -7,11 +7,10 @@ module BUS(
 	 input [15:0] AC,
 	 input [23:0] IRAM,
 	 input [15:0] DRAM,
-	 input [7:0] datain,
 
     output [23:0] BUS_OUT);
     
    
-assign BUS_OUT = WTA | DR | AC | IRAM | DRAM | datain ;
+assign BUS_OUT = WTA | DR | AC | IRAM | DRAM;
 
 endmodule 

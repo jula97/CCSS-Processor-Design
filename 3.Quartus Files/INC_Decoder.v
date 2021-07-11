@@ -1,4 +1,4 @@
-module INC_Decoder(input [7:0]INC_sel, 
+module INC_Decoder(input [6:0]INC_sel, 
 			   input INC_en,
 			  
 			  output inc_ROW ,
@@ -9,7 +9,7 @@ module INC_Decoder(input [7:0]INC_sel,
 			  output inc_STC ,
 			  output inc_R1 );
 	
-	wire[7:0]decoder_out;
+	wire[6:0]decoder_out;
 	
 	assign decoder_out = (INC_en == 1) ? INC_sel :
                          7'b0000000;

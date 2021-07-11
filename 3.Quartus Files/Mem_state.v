@@ -15,7 +15,6 @@ fetch1     = 6'd0,
 comm1       = 6'd2,
 comm2       = 6'd3,
 comm3       = 6'd4,
-comm4       = 6'd5,
 diff1       = 6'd6,
 diff2       = 6'd7,
 diff3       = 6'd8,
@@ -31,24 +30,17 @@ diff12      = 6'd17,
 store1      = 6'd18,
 store2      = 6'd19,
 store3      = 6'd20,
-store4      = 6'd21,
-store5      = 6'd22,
-store6      = 6'd23,
-store7      = 6'd24,
-store8      = 6'd25,
-store9      = 6'd26,
-store10     = 6'd27,
-store11     = 6'd28,
-store12     = 6'd29;
+store4      = 6'd21;
 
- always @(posedge clk)
+
+always @(posedge clk)
 begin 
 	present <= next;
 end
 
 
 
-always @(present)
+always @(present or memory_state)
 case(present)
 	fetch1: begin
 		mem_ctrl[0]    <= 0;	  //DR1_wrt_en

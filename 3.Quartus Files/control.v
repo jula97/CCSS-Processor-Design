@@ -99,6 +99,9 @@ ldacmulti14= 7'd73,
 ldacmulti15= 7'd74,
 ldacmulti16= 7'd75,
 
+sub1       = 7'd76,
+sub2       = 7'd77,
+
 endop      = 7'd85;
 
 
@@ -237,6 +240,7 @@ case(present)
 		 else if (instruction_opcode == 5'd17)   next <= ldacreg1;
        else if (instruction_opcode == 5'd18)   next <= stacreg1;
 		 else if (instruction_opcode == 5'd19)   next <= ldacmulti1;
+		 else if (instruction_opcode == 5'd20)   next <= sub1;
        else    next <= endop;		
 
 	end
@@ -266,6 +270,55 @@ case(present)
 		next <= add2 ;
 	end
 	add2: begin
+		ctrlsig[0]    <= 0;		//INC_dec_en
+		ctrlsig[1]    <= 0;		//RST_dec_en
+		ctrlsig[2]    <= 0;		//WTR_dec_en
+		ctrlsig[3]    <= 0;		//DR_write_en
+		ctrlsig[4]    <= 0;		//PC_write_en
+		ctrlsig[7:5]  <= 3'b010;//OPR_demux
+		ctrlsig[8]    <= 0;		//mem_read
+		ctrlsig[9]    <= 1;		//WTA_en
+		ctrlsig[10]   <= 0;		//AC_write_en
+		ctrlsig[11]   <= 1;		//AC_ALU_write_en
+		ctrlsig[14:12]<= 3'b000;//ALU_op
+		ctrlsig[15]   <= 0;		//Dmem_write_en
+		ctrlsig[16]   <= 0;		//Dmem_read_en
+		ctrlsig[17]   <= 0;		//AR_write_en
+		ctrlsig[18]   <= 0;		//IR_write_en
+		ctrlsig[19]   <= 0;		//PC_Inc	
+		ctrlsig[20]   <= 0;		//AC_read_en
+	   ctrlsig[21]   <= 0;		//DR_read_en
+      ctrlsig[22]   <= 0;		//AC_reset
+	   ctrlsig[23]   <= 0;		//mem_state
+	   ctrlsig[24]   <= 0;		//mem_state			
+		next <= fetch1 ;
+	end
+////////////////////////////////////////////////////////////////////
+	sub1: begin
+		ctrlsig[0]    <= 0;		//INC_dec_en
+		ctrlsig[1]    <= 0;		//RST_dec_en
+		ctrlsig[2]    <= 0;		//WTR_dec_en
+		ctrlsig[3]    <= 0;		//DR_write_en
+		ctrlsig[4]    <= 0;		//PC_write_en
+		ctrlsig[7:5]  <= 3'b010;//OPR_demux
+		ctrlsig[8]    <= 0;		//mem_read
+		ctrlsig[9]    <= 1;		//WTA_en
+		ctrlsig[10]   <= 0;		//AC_write_en
+		ctrlsig[11]   <= 0;		//AC_ALU_write_en
+		ctrlsig[14:12]<= 3'b111;//ALU_op
+		ctrlsig[15]   <= 0;		//Dmem_write_en
+		ctrlsig[16]   <= 0;		//Dmem_read_en
+		ctrlsig[17]   <= 0;		//AR_write_en
+		ctrlsig[18]   <= 0;		//IR_write_en
+		ctrlsig[19]   <= 0;		//PC_Inc
+		ctrlsig[20]   <= 0;		//AC_read_en
+	   ctrlsig[21]   <= 0;		//DR_read_en
+      ctrlsig[22]   <= 0;		//AC_reset
+	   ctrlsig[23]   <= 0;		//mem_state
+	   ctrlsig[24]   <= 0;		//mem_state			
+		next <= sub2 ;
+	end
+	sub2: begin
 		ctrlsig[0]    <= 0;		//INC_dec_en
 		ctrlsig[1]    <= 0;		//RST_dec_en
 		ctrlsig[2]    <= 0;		//WTR_dec_en
@@ -528,7 +581,7 @@ case(present)
 		ctrlsig[20]   <= 0;		//AC_read_en
 	   ctrlsig[21]   <= 0;		//DR_read_en
       ctrlsig[22]   <= 0;		//AC_reset
-	   ctrlsig[23]   <= 1;		//mem_state
+	   ctrlsig[23]   <= 0;		//mem_state
 	   ctrlsig[24]   <= 0;		//mem_state			
 		next <= ldac7 ;
 	end
@@ -1093,7 +1146,7 @@ case(present)
 		ctrlsig[20]   <= 0;		//AC_read_en
 	   ctrlsig[21]   <= 0;		//DR_read_en
       ctrlsig[22]   <= 0;		//AC_reset
-	   ctrlsig[23]   <= 1;		//mem_state
+	   ctrlsig[23]   <= 0;		//mem_state
 	   ctrlsig[24]   <= 0;		//mem_state			
 		next <= ldacreg7 ;
 	end
@@ -1266,7 +1319,7 @@ case(present)
 		ctrlsig[22]   <= 0;		//AC_reset
 	   ctrlsig[23]   <= 1;		//mem_state
 	   ctrlsig[24]   <= 1;		//mem_state		
-		if      (NoC == 15'd2)  next <= fetch1;		
+		if      (NoC == 15'd3)  next <= fetch1;		
 		else    next <= stacreg7 ;
 	end
 	stacreg7: begin

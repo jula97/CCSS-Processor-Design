@@ -10,14 +10,14 @@ module multicore1(input clock_en,
 				output segmentA5, segmentB5, segmentC5, segmentD5, segmentE5, segmentF5, segmentG5,
 				output segmentA6, segmentB6, segmentC6, segmentD6, segmentE6, segmentF6, segmentG6,
 				output segmentA7, segmentB7, segmentC7, segmentD7, segmentE7, segmentF7, segmentG7,
-				output [7:0]bus_out,
+				output [23:0]bus_out,
 				output [24:0]ctrlsig_out,
 				output endp,
 				output Zout);
 
 reg [2:0]select_core = 3'd1;
-reg [15:0] countCLK;
-reg [15:0] storecount;
+reg [23:0] countCLK;
+reg [23:0] storecount;
 wire c1_endop;
 
 wire [15:0]PCout;
@@ -29,10 +29,6 @@ wire [15:0]ar3out;
 wire [15:0]ar4out;
 wire [12:0]mem_sig;
 				
-wire LED1;
-wire LED2;
-wire LED3;	
-wire LED4;
 wire [15:0]c1_PCout;
 reg [23:0]c1_memout;
 wire [15:0]c2_PCout;
@@ -61,6 +57,11 @@ wire [15:0]c1_Rout;
 wire [15:0]c2_Rout;
 wire [15:0]c3_Rout;
 wire [15:0]c4_Rout;
+
+wire [23:0]c1_bus_out;
+wire [23:0]c2_bus_out;
+wire [23:0]c3_bus_out;
+wire [23:0]c4_bus_out;
 
 wire c1_A,c1_B,c1_C,c1_D,c1_E,c1_F,c1_G;
 wire c1_A1,c1_B1,c1_C1,c1_D1,c1_E1,c1_F1,c1_G1;
@@ -113,11 +114,8 @@ begin
 	storecount <= countCLK;
 end
 
+//IRAM and DRAM
 instruction_memory    IRAM(.clock(clk), .address(PCout), .data(storecount), .wren(c1_endop), .q(memout));
-//data_memory     DRAM( .address(c1_ARout), .clock(clk), .data(c1_DRout), .wren(c1_ctrlsig15), .q(c1_Dmemout));
-//data_memory1     RAM1( .address(c2_ARout), .clock(clk), .data(c2_DRout), .wren(c2_ctrlsig15), .q(c2_Dmemout));
-//data_memory2     RAM2( .address(c3_ARout), .clock(clk), .data(c3_DRout), .wren(c3_ctrlsig15), .q(c3_Dmemout));
-//data_memory3     RAM3( .address(c4_ARout), .clock(clk), .data(c4_DRout), .wren(c4_ctrlsig15), .q(c4_Dmemout));
 
 ////////////////////////////////////////////////////////////////////////////						  
 mem_control MEMCU(.clk(clk),.c1_AR(c1_ARout),.c2_AR(c2_ARout),.c3_AR(c3_ARout),.c4_AR(c4_ARout),.mem_ctrl(mem_sig),
@@ -127,6 +125,8 @@ mem_control MEMCU(.clk(clk),.c1_AR(c1_ARout),.c2_AR(c2_ARout),.c3_AR(c3_ARout),.
 ////////////////////////////////////////////////////////////////////////////
 Mem_state CU(.clk(clk), .memory_state(c1_ctrlsig_out[24:23]), .NoCin(c1_Rout), .mem_ctrl(mem_sig));
 
+
+//////////////////////////////////////////////////////////////
 assign PCout = c1_PCout;
 reg [2:0]sel;
 
@@ -233,7 +233,7 @@ outputmux selectcore(. c1_segmentA(c1_A),. c1_segmentB(c1_B),. c1_segmentC(c1_C)
 				. Zout(Zout),
 				. select_core(select_core));
 				
-				 
+//Instantiation of four cores
 phase_6 core1(. coreID(3'd0),.clock_en(clock_en),		
 				 .clk2(clk2),
 				 .controlRST(controlRST),

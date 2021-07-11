@@ -236,6 +236,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "bus_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[7]",
+					"strict" : false
+				},
+				{
 					"name" : "ctrlsig_out[0]",
 					"strict" : false
 				},

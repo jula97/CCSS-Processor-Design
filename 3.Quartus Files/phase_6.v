@@ -2,7 +2,7 @@
 //module for phase 7 of ccss-processor design
 //intergrates all the modules and the control unit for a single core
 
-module phase_6(input [2:0]coreID,
+module phase_6(input [15:0]coreID,
 				input clock_en,		
 				input clk2,
 				input controlRST,
@@ -15,7 +15,7 @@ module phase_6(input [2:0]coreID,
 				output segmentA5, segmentB5, segmentC5, segmentD5, segmentE5, segmentF5, segmentG5,
 				output segmentA6, segmentB6, segmentC6, segmentD6, segmentE6, segmentF6, segmentG6,
 				output segmentA7, segmentB7, segmentC7, segmentD7, segmentE7, segmentF7, segmentG7,
-				output [7:0]bus_out,
+				output [23:0]bus_out,
 				output [24:0]ctrlsig_out,
 				output endp,
 				output Zout,
@@ -28,7 +28,6 @@ module phase_6(input [2:0]coreID,
 
 
 wire [24:0]ctrlsig;
-wire [5:0]ins;
 
 //internal register wires
 wire [15:0]CoreIDout;
@@ -107,6 +106,9 @@ wire [15:0]ALU_out;
 wire z_in;
 wire z_out;
 
+//clock wire
+wire clk;
+
 //control signal displays and bus display
 assign ctrlsig_out = ctrlsig;
 assign bus_out     = bus;
@@ -172,7 +174,7 @@ WTA_mux   mux1(.WTA_sel(WTA), .WTA_en(ctrlsig[9]), .wta_N(Nout) , .wta_M(Mout) ,
              .wta_CURR(CURRout) , .wta_SUM(SUMout) ,.wta_STA(STAout), .wta_STB(STBout) , .wta_STC(STCout) , .wta_A(Aout) , .wta_B(Bout) ,
              .wta_R(Rout) , .wta_CoreID(CoreIDout), .dataout(mux_out));
 				 
-BUS    A_bus(.WTA(mux_out), .DR(DRbufout), .AC(ACbufout), .IRAM(Membufout), .DRAM(DMembufout), .datain(datain), .BUS_OUT(bus));
+BUS    A_bus(.WTA(mux_out), .DR(DRbufout), .AC(ACbufout), .IRAM(Membufout), .DRAM(DMembufout), .BUS_OUT(bus));
 
 //internal registers			 
 reg_type1_16bit  reg_CoreID(.clk(clk), .write_en(1) , .datain(coreID) , .dataout(CoreIDout));

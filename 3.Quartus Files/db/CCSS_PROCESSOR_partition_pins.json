@@ -4,235 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Clock_LED",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG1",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG2",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG3",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG4",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG5",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG6",
-					"strict" : false
-				},
-				{
-					"name" : "segmentA7",
-					"strict" : false
-				},
-				{
-					"name" : "segmentB7",
-					"strict" : false
-				},
-				{
-					"name" : "segmentC7",
-					"strict" : false
-				},
-				{
-					"name" : "segmentD7",
-					"strict" : false
-				},
-				{
-					"name" : "segmentE7",
-					"strict" : false
-				},
-				{
-					"name" : "segmentF7",
-					"strict" : false
-				},
-				{
-					"name" : "segmentG7",
-					"strict" : false
-				},
-				{
 					"name" : "bus_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[21]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[22]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_out[23]",
 					"strict" : false
 				},
 				{
@@ -344,15 +208,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "controlRST",
+					"strict" : false
+				},
+				{
 					"name" : "clock_en",
 					"strict" : false
 				},
 				{
 					"name" : "clk2",
-					"strict" : false
-				},
-				{
-					"name" : "controlRST",
 					"strict" : false
 				},
 				{

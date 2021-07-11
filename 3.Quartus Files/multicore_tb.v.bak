@@ -1,0 +1,33 @@
+`timescale 1ns/10ps
+
+module multicore_tb;
+        reg clock_en;		
+        reg clk2 = 0;
+        reg controlRST = 0;
+        wire [23:0]bus_out;
+        wire [24:0]ctrlsig_out;
+        wire endp;
+        wire Zout;
+
+
+multicore1 UUT(
+    .clock_en(clock_en),		
+    .clk2(clk2),
+    .controlRST(controlRST),
+    .bus_out(bus_out),
+    .ctrlsig_out(ctrlsig_out),
+    .endp(endp),
+    .Zout(Zout)
+);
+
+initial begin
+    #2 controlRST = 1;
+    #2 controlRST = 0;
+    #5 clock_en = 1;
+end
+
+always
+    #0.1 clk2 = !clk2;
+
+endmodule
+

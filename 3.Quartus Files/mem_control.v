@@ -15,7 +15,11 @@ module mem_control(input clk,
 						input [15:0]data1,
 						input [15:0]data2,
 						input [15:0]data3,
-						input [15:0]data4);
+						input [15:0]data4,
+						output [15:0]address1,
+						output [15:0]data_in1,
+						output [15:0]mem_bus1
+						);
 
 wire [15:0]mem_bus;
 wire [15:0]AR1out;
@@ -32,6 +36,10 @@ wire [15:0]data3bufout;
 wire [15:0]data4bufout;
 wire [15:0]address;
 wire [15:0]data_in;
+
+assign address1 = address;
+assign data_in1 = data_in;
+assign mem_bus1 = mem_bus;
 
 assign Ar1out = AR1out;
 assign Ar2out = AR2out;

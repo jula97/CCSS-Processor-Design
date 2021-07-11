@@ -7,3 +7,4 @@ set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "data_memo
 set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "data_memory_bb.v"]
 set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "data_memory.inc"]
 set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "data_memory.cmp"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "data_memory_syn.v"]

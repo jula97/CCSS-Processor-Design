@@ -1,0 +1,546 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/simulation/modelsim
+valu
+Z1 !s110 1625287974
+!i10b 1
+!s100 ]?hl9MG8>P2CzI=;R^mXZ2
+I:1S0@DJ7929>QZ4]ef24:0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1624699371
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/alu.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1625287974.000000
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction}
+Z7 tCvgOpt 0
+vBUS
+R1
+!i10b 1
+!s100 ljm0J?>gP6S<N;`lN3o`_0
+ITh7dzek^B@O;cZ_R3a]ff3
+R2
+R0
+w1624109689
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/BUS.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/BUS.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/BUS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/BUS.v|
+!i113 1
+R5
+R6
+R7
+n@b@u@s
+vcontrol
+R1
+!i10b 1
+!s100 ^Od85O[ZGO6XG;;^W6fbk2
+IH:WcY8a@VVWIZ@7I6@ZA`2
+R2
+R0
+w1624699780
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/control.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/control.v|
+!i113 1
+R5
+R6
+R7
+vdata_memory
+Z8 !s110 1625287975
+!i10b 1
+!s100 TM022UoMb<TzUmK_HMIR12
+Ic>ZZaVJ7Hd<T9S>XQiN:>2
+R2
+R0
+w1623895788
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/data_memory.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/data_memory.v
+Z9 L0 40
+R3
+r1
+!s85 0
+31
+Z10 !s108 1625287975.000000
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/data_memory.v|
+!i113 1
+R5
+R6
+R7
+vINC_Decoder
+R1
+!i10b 1
+!s100 k:Ua4gFX[aYdd6`ooH7nW1
+IU8JV:Qakf@Zi^PgJ18hn^1
+R2
+R0
+w1624109055
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/INC_Decoder.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/INC_Decoder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/INC_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/INC_Decoder.v|
+!i113 1
+R5
+R6
+R7
+n@i@n@c_@decoder
+vinstruction_memory
+R1
+!i10b 1
+!s100 ]zBTI]eRLLE13IMYF8P_<1
+I6O9]6lnU2lkALLd8BHKAJ3
+R2
+R0
+w1623895678
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/instruction_memory.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/instruction_memory.v
+R9
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/instruction_memory.v|
+!i113 1
+R5
+R6
+R7
+vmem_control
+R8
+!i10b 1
+!s100 n512XNmg5B<5P168CfMf;3
+I@PQc3JY]UGM]b79o73ZFM3
+R2
+R0
+w1623912292
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/mem_control.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/mem_control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/mem_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/mem_control.v|
+!i113 1
+R5
+R6
+R7
+vMem_state
+Z11 !s110 1625287970
+!i10b 1
+!s100 n`lXP]iJ?gh97:e;RmJgA3
+IGU[`39B6M9QWN26;K>EQ73
+R2
+R0
+w1624419662
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/Mem_state.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/Mem_state.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z12 !s108 1625287970.000000
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/Mem_state.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/Mem_state.v|
+!i113 1
+R5
+R6
+R7
+n@mem_state
+vmulticore1
+R8
+!i10b 1
+!s100 XbN_>l::hO9;bd==@KjOZ0
+ILk5oLmN4QEca5@_<T_JJg0
+R2
+R0
+w1624173455
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore1.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore1.v|
+!i113 1
+R5
+R6
+R7
+vmulticore_tb
+!s110 1625287976
+!i10b 1
+!s100 >?QnL@Ie]]AHB9CO^CP7n0
+IQEhP]>dRFQT6n9_V0[So10
+R2
+R0
+w1624725256
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore_tb.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/multicore_tb.v|
+!i113 1
+R5
+R6
+R7
+vOPR_demux
+Z13 !s110 1625287973
+!i10b 1
+!s100 nOGXIL;G=C`AFW3;QmBTc2
+IMcm?jYN>_8fic7J=?XKN70
+R2
+R0
+Z14 w1623600636
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/OPR_demux.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/OPR_demux.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z15 !s108 1625287973.000000
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/OPR_demux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/OPR_demux.v|
+!i113 1
+R5
+R6
+R7
+n@o@p@r_demux
+voutputmux_simulation
+R8
+!i10b 1
+!s100 mm:32enEUQk`9HbMzm?ek3
+IeHiaEmQ[8TZ5R50jz=G6T3
+R2
+R0
+w1624114469
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/outputmux_simulation.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/outputmux_simulation.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/outputmux_simulation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/outputmux_simulation.v|
+!i113 1
+R5
+R6
+R7
+vphase_6
+R13
+!i10b 1
+!s100 ?LhlZ]HWZ^7fjWUOPhEVe3
+I4]Wi;29hM4mFTOg[eK2m90
+R2
+R0
+w1624115557
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/phase_6.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/phase_6.v
+L0 5
+R3
+r1
+!s85 0
+31
+R15
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/phase_6.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/phase_6.v|
+!i113 1
+R5
+R6
+R7
+vread_buffer_16bit
+R13
+!i10b 1
+!s100 0QV09ngVC5CXKj0a6RcOO1
+I6;EaGToD=ZP2YJgScJSb;3
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/read_buffer_16bit.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/read_buffer_16bit.v
+L0 4
+R3
+r1
+!s85 0
+31
+R15
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/read_buffer_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/read_buffer_16bit.v|
+!i113 1
+R5
+R6
+R7
+vreg_ac
+Z16 !s110 1625287972
+!i10b 1
+!s100 ELYDHj17jAhX3iX`7M@iN1
+IWd1425]K1lKIMCAT69OQf3
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_ac.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_ac.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z17 !s108 1625287972.000000
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_ac.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_ac.v|
+!i113 1
+R5
+R6
+R7
+vreg_SUM
+R16
+!i10b 1
+!s100 dOhJOR^DAnJ8Nj?T]3O?L0
+IH?_BXg<^dk`_[<`F7h2?n2
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_SUM.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_SUM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R17
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_SUM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_SUM.v|
+!i113 1
+R5
+R6
+R7
+nreg_@s@u@m
+vreg_type1_16bit
+R16
+!i10b 1
+!s100 m^:FZX8^5;U9GfSP4WIM:3
+IS8M4LmlUdFJ]J6@=dMZVW2
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type1_16bit.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type1_16bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R17
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type1_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type1_16bit.v|
+!i113 1
+R5
+R6
+R7
+vreg_type2_16bit
+R16
+!i10b 1
+!s100 M9bG9fAgh^iP_3geJNi_a0
+I3_B199E2Mh[Fe<NM5F9;H1
+R2
+R0
+w1623902286
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type2_16bit.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type2_16bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R17
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type2_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type2_16bit.v|
+!i113 1
+R5
+R6
+R7
+vreg_type3_16bit
+R16
+!i10b 1
+!s100 CmGLSOgi>FA[1bNh:Jh2A0
+I?NHBAWCEILc>?BGne7eB_0
+R2
+R0
+w1623902290
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type3_16bit.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type3_16bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R17
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type3_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_type3_16bit.v|
+!i113 1
+R5
+R6
+R7
+vreg_z
+R16
+!i10b 1
+!s100 bE0[Ch1K1FVcMI?XB<:^72
+IZBgNYZYL[EE0Ed;cf^a2C0
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_z.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_z.v
+L0 4
+R3
+r1
+!s85 0
+31
+Z18 !s108 1625287971.000000
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_z.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/reg_z.v|
+!i113 1
+R5
+R6
+R7
+vRST_Decoder
+Z19 !s110 1625287971
+!i10b 1
+!s100 V^QC6U:jK30e]=_BH_<2]2
+ITAYF_HfaKal13[<?[_48U2
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/RST_Decoder.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/RST_Decoder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/RST_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/RST_Decoder.v|
+!i113 1
+R5
+R6
+R7
+n@r@s@t_@decoder
+vscaledclock
+R19
+!i10b 1
+!s100 1f`Lf4=@L:zIn1B]1=Lon2
+I=LM8YY^BY4bzMMGdZCe8>3
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/scaledclock.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/scaledclock.v
+L0 4
+R3
+r1
+!s85 0
+31
+R18
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/scaledclock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/scaledclock.v|
+!i113 1
+R5
+R6
+R7
+vWTA_mux
+R19
+!i10b 1
+!s100 DDo7>g]ZohGD]JZ>zXcA_1
+I17L0aDcb@0hL7a>SZc3KE3
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTA_mux.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTA_mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTA_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTA_mux.v|
+!i113 1
+R5
+R6
+R7
+n@w@t@a_mux
+vWTR_Decoder
+R11
+!i10b 1
+!s100 Ib7_XD<F<g7F_bTZkh2Ic3
+IezcN_@d]46bRQ_lGCA@K@2
+R2
+R0
+R14
+8D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTR_Decoder.v
+FD:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTR_Decoder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTR_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction|D:/Documents_fpga_project/FPGA/Working codes/SIMULATION MULTICORE3/3.Quartus Files with sub instruction/WTR_Decoder.v|
+!i113 1
+R5
+R6
+R7
+n@w@t@r_@decoder

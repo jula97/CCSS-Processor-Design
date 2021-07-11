@@ -16,11 +16,12 @@
 				3'd4: alu_out <= in1 / in2;
 				3'd5: alu_out <= in1 % in2;
 				3'd6: alu_out <= in1 * 3'd2;
+				3'd7: alu_out <= in1 - in2;
 				default: alu_out <= alu_out;
 				
 			endcase
 
-			if (alu_out==0)
+			if (alu_out==16'd0)
 				z <= 1;
 			else
 				z <= 0;

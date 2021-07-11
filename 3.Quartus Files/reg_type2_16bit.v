@@ -3,7 +3,7 @@ module reg_type2_16bit(input clk,
 							  input [15:0]datain,
 					        input inc,
 					
-					        output reg [15:0]dataout);
+					        output reg [15:0]dataout = 16'd0);
 
 					
 	always @ (posedge clk)

@@ -1,0 +1,27 @@
+// memory data file (do not edit the following line - required for mem load use)
+// instance=/multicore_tb/UUT/MEMCU/DRAM/altsyncram_component/m_default/altsyncram_inst/mem_data
+// format=mti addressradix=h dataradix=d version=1.0 wordsperline=11 noaddress
+     4      4      2      4      7     15     23      1      2      3      4
+     5      6      7      8      1      5      2      6      3      7      4
+     8     11     14     17     20     23     30     37     44     35     46
+    57     68     47     62     77     92      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0      0      0      0      0      0      0      0      0
+     0      0      0 

@@ -2,20 +2,11 @@
 //module for phase 7 of ccss-processor design
 //intergrates all the modules and the control unit for a single core
 
-module phase_6(input [2:0]coreID,
+module phase_6(input [15:0]coreID,
 				input clock_en,		
 				input clk2,
 				input controlRST,
-				output Clock_LED,
-				output segmentA, segmentB, segmentC, segmentD, segmentE, segmentF, segmentG,
-				output segmentA1, segmentB1, segmentC1, segmentD1, segmentE1, segmentF1, segmentG1,
-				output segmentA2, segmentB2, segmentC2, segmentD2, segmentE2, segmentF2, segmentG2,
-				output segmentA3, segmentB3, segmentC3, segmentD3, segmentE3, segmentF3, segmentG3,
-				output segmentA4, segmentB4, segmentC4, segmentD4, segmentE4, segmentF4, segmentG4,
-				output segmentA5, segmentB5, segmentC5, segmentD5, segmentE5, segmentF5, segmentG5,
-				output segmentA6, segmentB6, segmentC6, segmentD6, segmentE6, segmentF6, segmentG6,
-				output segmentA7, segmentB7, segmentC7, segmentD7, segmentE7, segmentF7, segmentG7,
-				output [7:0]bus_out,
+				output [23:0]bus_out,
 				output [24:0]ctrlsig_out,
 				output endp,
 				output Zout,
@@ -24,11 +15,12 @@ module phase_6(input [2:0]coreID,
 				output [15:0]ARout1,
 				input [15:0]Dmemout1,
 				output [15:0]DRout1,
-				output [15:0]Rout1);
+				output [15:0]Rout1
+				);
 
 
 wire [24:0]ctrlsig;
-wire [5:0]ins;
+
 
 //internal register wires
 wire [15:0]CoreIDout;
@@ -107,11 +99,13 @@ wire [15:0]ALU_out;
 wire z_in;
 wire z_out;
 
+//clock wire
+wire clk;
+
 //control signal displays and bus display
 assign ctrlsig_out = ctrlsig;
 assign bus_out     = bus;
 assign Zout        = z_out;
-assign Clock_LED   = clk;
 assign PCout1      = PCout;
 assign memout      = memout1;
 assign ARout1      = ARout;
@@ -119,32 +113,9 @@ assign Dmemout     = Dmemout1;
 assign DRout1      = DRout;
 assign Rout1       = Rout;
 
-//register displays
-bin27 display_reg_ROW(.clk(clk2),.datain(STAout),.segmentA(segmentA),.segmentB(segmentB),.segmentC(segmentC),.segmentD(segmentD),
-                      .segmentE(segmentE), .segmentF(segmentF), .segmentG(segmentG) );
-							 
-bin27 display_reg_SUM(.clk(clk2),.datain(STBout),.segmentA(segmentA1),.segmentB(segmentB1),.segmentC(segmentC1),.segmentD(segmentD1),
-                      .segmentE(segmentE1),.segmentF(segmentF1), .segmentG(segmentG1) );
-
-bin27 display_reg_R(.clk(clk2),.datain(STCout),.segmentA(segmentA2),.segmentB(segmentB2),.segmentC(segmentC2),.segmentD(segmentD2),
-                      .segmentE(segmentE2),.segmentF(segmentF2), .segmentG(segmentG2) );
-							 
-bin27 display_reg_DR(.clk(clk2),.datain(Aout),.segmentA(segmentA3),.segmentB(segmentB3),.segmentC(segmentC3),.segmentD(segmentD3),
-                      .segmentE(segmentE3), .segmentF(segmentF3), .segmentG(segmentG3) );	
-	
-bin27 display_reg_PC(.clk(clk2),.datain(ACout),.segmentA(segmentA4),.segmentB(segmentB4),.segmentC(segmentC4),.segmentD(segmentD4),
-                      .segmentE(segmentE4), .segmentF(segmentF4), .segmentG(segmentG4) );	
-
-bin27 display_reg_IR(.clk(clk2),.datain(PCout),.segmentA(segmentA5),.segmentB(segmentB5),.segmentC(segmentC5),.segmentD(segmentD5),
-                      .segmentE(segmentE5), .segmentF(segmentF5), .segmentG(segmentG5) );	
-	
-bin27 display_reg_AC(.clk(clk2),.datain(IRout),.segmentA(segmentA6),.segmentB(segmentB6),.segmentC(segmentC6),.segmentD(segmentD6),
-                      .segmentE(segmentE6), .segmentF(segmentF6), .segmentG(segmentG6) );
-							 
-bin27 display_reg_AR(.clk(clk2),.datain(DRout),.segmentA(segmentA7),.segmentB(segmentB7),.segmentC(segmentC7),.segmentD(segmentD7),
-                    .segmentE(segmentE7), .segmentF(segmentF7), .segmentG(segmentG7) );
 						  					  
-
+											  
+											  
 //Scaled clock 
 scaledclock clock(.inclk(clk2),.ena(clock_en),.clk(clk));
 
@@ -172,7 +143,7 @@ WTA_mux   mux1(.WTA_sel(WTA), .WTA_en(ctrlsig[9]), .wta_N(Nout) , .wta_M(Mout) ,
              .wta_CURR(CURRout) , .wta_SUM(SUMout) ,.wta_STA(STAout), .wta_STB(STBout) , .wta_STC(STCout) , .wta_A(Aout) , .wta_B(Bout) ,
              .wta_R(Rout) , .wta_CoreID(CoreIDout), .dataout(mux_out));
 				 
-BUS    A_bus(.WTA(mux_out), .DR(DRbufout), .AC(ACbufout), .IRAM(Membufout), .DRAM(DMembufout), .datain(datain), .BUS_OUT(bus));
+BUS    A_bus(.WTA(mux_out), .DR(DRbufout), .AC(ACbufout), .IRAM(Membufout), .DRAM(DMembufout), .BUS_OUT(bus));
 
 //internal registers			 
 reg_type1_16bit  reg_CoreID(.clk(clk), .write_en(1) , .datain(coreID) , .dataout(CoreIDout));
